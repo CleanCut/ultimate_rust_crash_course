@@ -1,40 +1,43 @@
+// Silence some warnings that could distract from the exercise
+#![allow(unused_variables, unused_mut, dead_code)]
+
 // Someone is shooting arrows at a target.  We need to classify the shots.
 //
-// 1. Create an enum called "Shot" with variants:
-// - Bullseye
-// - Hit, containing the distance from the center (an f64)
-// - Miss
-
+// 1a. Create an enum called `Shot` with variants:
+// - `Bullseye`
+// - `Hit`, containing the distance from the center (an f64)
+// - `Miss`
+//
+// You will need to complete 1b as well before you will be able to run this program successfully.
 
 impl Shot {
-    // Here is a method for the Shot enum you just defined.
+    // Here is a method for the `Shot` enum you just defined.
     fn points(self) -> i32 {
-        // 2. Implement this method to convert a Shot into points
-        // - 5 points for Bullseye
-        // - 2 points for Hit(x) where x < 3.0
-        // - 1 point for Hit(x) where x >= 3.0
-        // - 0 points for Miss
+        // 1b. Implement this method to convert a Shot into points
+        // - return 5 points if `self` is a `Shot::Bullseye`
+        // - return 2 points if `self` is a `Shot::Hit(x)` where x < 3.0
+        // - return 1 point if `self` is a `Shot::Hit(x)` where x >= 3.0
+        // - return 0 points if `self` is a Miss
     }
 }
 
 fn main() {
-    // Simulate shooting a bunch of arrows and gathering their coordinates on
-    // the target.
+    // Simulate shooting a bunch of arrows and gathering their coordinates on the target.
     let arrow_coords: Vec<Coord> = get_arrow_coords(5);
     let mut shots: Vec<Shot> = Vec::new();
 
-    // 3. For each Coord in arrow_coords:
+    // 2. For each coord in arrow_coords:
     //
-    //   A. Call coord.print_description()
-    //   B. Create the correct variant of Shot depending on the value of
-    //      coord.distance_from_center()
-    //      - Less than 1.0 -- Bullseye
-    //      - Between 1.0 and 5.0 -- Hit(value)
-    //      - Greater than 5.0 -- Miss
+    //   A. Call `coord.print_description()`
+    //   B. Create the correct variant of `Shot` depending on the value of
+    //   `coord.distance_from_center()`
+    //      - Less than 1.0 -- `Shot::Bullseye`
+    //      - Between 1.0 and 5.0 -- `Shot::Hit(value)`
+    //      - Greater than 5.0 -- `Shot::Miss`
 
 
     let mut total = 0;
-    // 4. Finally, loop through each shot in shots and add its points to total
+    // 3. Finally, loop through each shot in shots and add its points to total
 
     println!("Final point total is: {}", total);
 }
