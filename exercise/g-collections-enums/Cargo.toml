@@ -1,0 +1,8 @@
+[package]
+name = "g-collections-enums"
+version = "0.1.0"
+authors = ["Nathan Stocks <nathan.stocks@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.6.5"
