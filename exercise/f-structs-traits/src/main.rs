@@ -1,23 +1,22 @@
-// 1. Define a trait named "Bite"
+// 1. Define a trait named `Bite`
 //
-// Define a single required method, "fn bite(self: &mut Self)".  We will call
-// this method when we want to bite something.  Once this is defined, you should
-// be able to run the program without any errors.
+// Define a single required method, `fn bite(self: &mut Self)`.  We will call this method when we
+// want to bite something.  Once this trait is defined, you should be able to run the program with
+// `cargo run` without any errors.
 //
 //  trait Bite...
 
 
-// 2. Now create a struct named Grapes with a field that tracks how many grapes
-// are left.  If you need a hint, look at how it was done for Carrot at the
-// bottom of this file (you should probably use a different field, though).
+// 2. Now create a struct named Grapes with a field that tracks how many grapes are left.  If you
+// need a hint, look at how it was done for Carrot at the bottom of this file (you should probably
+// use a different field, though).
 //
 // #[derive(Debug)] // include this line right before your struct definition
 // struct Grapes...
 
 
-// 3. Implement Bite for Grapes.  When you bite a Grapes, subtract 1 from how
-// many grapes are left.  If you need a hint, look at how it was done for Carrot
-// at the bottom of this file.
+// 3. Implement Bite for Grapes.  When you bite a Grapes, subtract 1 from how many grapes are left.
+// If you need a hint, look at how it was done for Carrot at the bottom of this file.
 //
 // impl Bite for...
 
@@ -35,10 +34,10 @@ fn main() {
     //grapes.bite();
     //println!("Eat a grape: {:?}", grapes);
 
-    // Challenge: Uncomment the code below. Create a generic bunny_nibbles()
+    // Challenge: Uncomment the code below. Create a generic `bunny_nibbles`
     // function that:
     // - takes a mutable reference to any type that implements Bite
-    // - calls .bite() several times
+    // - calls `.bite()` several times
     // Hint: Define the generic type between the function name and open paren:
     //       fn function_name<T: Bite>(...)
     //
