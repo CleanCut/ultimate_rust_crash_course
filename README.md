@@ -4,8 +4,6 @@ This is the companion repository for the [Ultimate Rust Crash Course] published 
 get the most out of this training experience by purchasing a license or subscribing to the course
 and watching the course videos while running through the [exercises] in this repository.
 
-[Ultimate Rust Crash Course]: https://agileperception.com/ultimate_rust_crash_course
-
 Watching is fun, but you will learn a lot more if you dig in and do some coding!
 This repository is for you hands-on-learners who are ready to roll.
 
@@ -64,7 +62,17 @@ for the [exercises].
 
 ### Exercises
 
-- [Exercise A - Variables](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/a-variables)
+Please clone this repository -- it will be much easier to edit the exercise files directly.
+
+The exercises are separate Rust projects inside the `exercises/` subdirectory.  With the exception
+of Exercise A (which is just a `README.md` file), you should open the exercise directory in your
+IDE/Editor, navigate to `src/main.rs`, and follow the exercise instructions in the code comments.
+
+If you encounter any problems with the exercises, please feel free to use the online course
+communication tools to contact me, or [open an issue]. Either way. 😄
+
+
+- [Exercise A - Variables & Scope](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/a-variables)
 - [Exercise B - Functions](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/b-functions)
 - [Exercise C - Simple Types](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/c-simple-types)
 - [Exercise D - Control Flow & Strings](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/d-control-flow-strings)
@@ -74,3 +82,5 @@ for the [exercises].
 - [Exercise Z - Final Project](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/z-final-project)
 
 [exercises]: https://github.com/CleanCut/ultimate_rust_crash_course#exercises
+[open an issue]: https://github.com/CleanCut/ultimate_rust_crash_course/issues/new
+[Ultimate Rust Crash Course]: https://agileperception.com/ultimate_rust_crash_course
