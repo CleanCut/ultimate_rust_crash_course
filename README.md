@@ -62,15 +62,15 @@ for the [exercises].
 
 # Exercises
 
-Please clone this repository -- it will be much easier to edit the exercise files directly.
+Please clone this repository! These exercises are designed as Rust projects for you to edit on your
+own computer, with the exception of Exercise A (which is just a `README.md` file).
 
-The exercises are separate Rust projects inside the `exercises/` subdirectory.  With the exception
-of Exercise A (which is just a `README.md` file), you should open the exercise directory in your
-IDE/Editor, navigate to `src/main.rs`, and follow the exercise instructions in the code comments.
+The exercises are separate Rust projects inside the `exercises/` subdirectory.  For each exercise,
+you should open the exercise directory in your IDE/Editor, open up `src/main.rs`, and follow the
+numbered exercise instructions in the code comments.
 
 If you encounter any problems with the exercises, please feel free to use the online course
 communication tools to contact me, or [open an issue]. Either way. 😄
-
 
 - [Exercise A - Variables & Scope](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/a-variables)
 - [Exercise B - Functions](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/b-functions)
