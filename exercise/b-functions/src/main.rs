@@ -5,28 +5,36 @@ fn main() {
     let width = 4;
     let height = 7;
     let depth = 10;
-    // 1. Try running this code and take a look at the errors.
+    // 1. Try running this code with `cargo run` and take a look at the error.
     //
-    // See if you can fix the problem. It's right around here, somewhere.
+    // See if you can fix the error. It is right around here, somewhere.  If you succeed, then
+    // doing `cargo run` should succeed and print something out.
     {
         let area = area_of(width, height);
     }
     println!("Area is {}", area);
 
-    // 2. The area is incorrect! Go fix the area_of() function below, then run
-    //    the code again and make sure it worked.
+    // 2. The area that was calculated is not correct! Go fix the area_of() function below, then run
+    //    the code again and make sure it worked (you should get an area of 28).
 
-    // 3. Uncomment the line below.  Make it work by creating a "volume"
-    //    function that multiplies three arguments together and returns the
-    //    result (which should be 280 when you run the program).
+    // 3. Uncomment the line below.  It doesn't work yet because the `volume` function doesn't exist.
+    //    Create the `volume` function!  It should:
+    //    - Take three arguments of type i32
+    //    - Multiply the three arguments together
+    //    - Return the result (which should be 280 when you run the program).
+    //
+    // If you get stuck, remember that this is *very* similar to what `area_of` does.
     //
     //println!("Volume is {}", volume(width, height, depth));
 }
 
 fn area_of(x: i32, y: i32) -> i32 {
-    // Fix this function to correctly compute the area of a rectangle given
-    // dimensions x and y.
+    // 2a. Fix this function to correctly compute the area of a rectangle given
+    // dimensions x and y by multiplying x and y and returning the result.
     //
-    // Bonus: Idiomatic rust doesn't use "return" at the end of a block, fix it!
     return 0;
+    // Challenge: The previous line is not idiomatic (not recommended best practice).
+    //            Run `cargo clippy`, figure out what's wrong, and fix it.  Once it is fixed,
+    //            `cargo clippy` won't return areas, and `cargo run` will still produce the same
+    //            output. See also https://github.com/rust-lang/rust-clippy
 }
