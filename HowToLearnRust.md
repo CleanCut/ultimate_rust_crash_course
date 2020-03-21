@@ -1,19 +1,20 @@
 # How To Learn Rust
 
-Perhaps more important than a crash course tutorial in Rust is **learning how to learn Rust**.  Learning how to learn Rust will put you on a path that will lead to mastering the subject.
+Perhaps more important than a crash course tutorial in Rust is **learning how to learn Rust**.  Learning how to learn
+Rust will put you on a path that will lead to mastering the subject.
 
 ### IDE / Editor
 
 Big, bloated IDE's can actually be really helpful in learning Rust.  IDE support is part of the core Rust project, and
-it is already getting really good.  Much more than just syntax highlighting, an IDE like IntelliJ will integrate with
-the compiler and show you type hints, compiler check errors, and all sorts of good stuff inline. 
+it is already getting really good.  Much more than just syntax highlighting, an IDE like VS Code or IntelliJ will
+integrate with the compiler and show you type hints, compiler check errors, and all sorts of good stuff inline.
 
 - Google the terms: `rust (name of the IDE or Editor you use)`
   - Need a suggestion? Visual Studio Code and IntelliJ are both great choices (and there are many more...)
   - Find the correct way to install Rust support for your IDE or Editor (it's often a plugin)
   - (Optional) Install TOML support, which is often separate from Rust support ([TOML](https://github.com/toml-lang/toml)
     is the config file format that Rust uses)
-  - ...wait...
+  - ...wait for it...
   - Be amazed at all the helpful auto-complete, etc. that turns on.  Yay!
   - Customize your editor to your liking.
 
@@ -28,7 +29,8 @@ You are always going to have questions.  Here is how you find the answers.
   - Forums
   - IRC channels
   - StackOverflow topics
-  - News (The [weekly newsletter](https://this-week-in-rust.org/) is seriously fantastic)
+  - News (The [weekly newsletter](https://this-week-in-rust.org/) is seriously fantastic), and I'm also quite partial
+    to [Rust GameDev news](https://rust-gamedev.github.io/)
   - YouTube channel
   - User Groups and Meetups
   - Where to find and communicate with all the core Rust Teams
@@ -85,7 +87,7 @@ found these books _especially_ useful and high quality:
 - [The Edition Guide](https://rust-lang-nursery.github.io/edition-guide/introduction.html) - Differences between Rust 2015 and Rust 2018
 - [String Formatting](https://doc.rust-lang.org/std/fmt/index.html) - `print!()`, `println!()`, `format!()`, etc. and
   how to deal with the format string.
-- [Firefox has about 1.5 million lines of Rust Code](https://www.openhub.net/p/firefox/analyses/latest/languages_summary)
+- [Firefox has over 1.5 million lines of Rust Code](https://www.openhub.net/p/firefox/analyses/latest/languages_summary)
   
 **More information about things we learned**
 - [Cargo](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html) and

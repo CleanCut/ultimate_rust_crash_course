@@ -2,7 +2,7 @@
 
 This is the companion repository for the [Ultimate Rust Crash Course] published online.  You will
 get the most out of this training experience by purchasing a license or subscribing to the course
-and watching the course videos while running through the exercises in this repository.
+and watching the course videos while running through the [exercises] in this repository.
 
 [Ultimate Rust Crash Course]: https://agileperception.com/ultimate_rust_crash_course
 
@@ -53,7 +53,7 @@ page for details on all of these)
 # Training!
 
 Now you are ready for the training!  Go watch the [Ultimate Rust Crash Course] and come back here
-for exercises.
+for the [exercises].
 
 ### Resources
 
@@ -72,3 +72,5 @@ for exercises.
 - [Exercise F - Structs & Traits](https://github.com/CleanCut/rust_programming/tree/master/exercise/f-structs-traits)
 - [Exercise G - Collections & Enums](https://github.com/CleanCut/rust_programming/tree/master/exercise/g-collections-enums)
 - [Exercise Z - Final Project](https://github.com/CleanCut/rust_programming/tree/master/exercise/z-final-project)
+
+[exercises]: https://github.com/CleanCut/ultimate_rust_crash_course#exercises
