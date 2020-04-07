@@ -6,8 +6,8 @@ fn main() {
     // 1. Pass parts of `coords` to the `print_difference` function. This should show the difference
     // between the two numbers in coords when you do `cargo run`.  Use tuple indexing.
     //
-    // The `print_difference` is defined below the `main` function. It may help if you look at how
-    // it is defined.
+    // The `print_difference` function is defined below the `main` function. It may help if you look
+    // at how it is defined.
     //
     //print_difference( ... );   // Uncomment and finish this line
 
