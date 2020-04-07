@@ -29,7 +29,7 @@ fn main() {
     // 2. For each coord in arrow_coords:
     //
     //   A. Call `coord.print_description()`
-    //   B. Create the correct variant of `Shot` depending on the value of
+    //   B. Append the correct variant of `Shot` to the `shots` vector depending on the value of
     //   `coord.distance_from_center()`
     //      - Less than 1.0 -- `Shot::Bullseye`
     //      - Between 1.0 and 5.0 -- `Shot::Hit(value)`
