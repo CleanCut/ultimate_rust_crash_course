@@ -44,7 +44,7 @@ fn double() {
     let mut x = 1;
     // 3. Use a "while loop" to count how many times you can double the value of `x` (multiply `x`
     // by 2) before it is larger than 500.  Increment `count` each time through the loop. Run it
-    // with `cargo run count`  Hint: The answer is 9 times.
+    // with `cargo run double`  Hint: The answer is 9 times.
 
 
     println!("You can double x {} times before it is larger than 500", count);
