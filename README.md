@@ -87,6 +87,11 @@ For your convenience, here is a list of all the exercises, with links to view th
 - [Exercise H - Closures & Threads](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/h-closures-threads)
 - [Exercise Z - Final Project](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/z-final-project)
 
+# Projects
+
+- [Invaders](https://github.com/CleanCut/invaders) - A terminal-based Space Invaders arcade game clone.
+
+
 [exercises]: https://github.com/CleanCut/ultimate_rust_crash_course#exercises
 [open an issue]: https://github.com/CleanCut/ultimate_rust_crash_course/issues/new
 [Ultimate Rust Crash Course]: https://agileperception.com/ultimate_rust_crash_course
