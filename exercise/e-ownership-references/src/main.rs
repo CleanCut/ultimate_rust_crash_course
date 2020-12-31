@@ -4,14 +4,10 @@
 fn main() {
     // This fancy stuff either gets the first argument as a String, or prints
     // usage and exits if an argument was not supplied to the program.
-    let mut arg: String = std::env::args()
-        .collect::<Vec<String>>()
-        .iter()
-        .nth(1)
-        .unwrap_or_else(|| {
-            println!("Please supply an argument to this program.");
-            std::process::exit(-1);
-        }).to_owned();
+    let mut arg: String = std::env::args().nth(1).unwrap_or_else(|| {
+        println!("Please supply an argument to this program.");
+        std::process::exit(-1);
+    });
 
     // 1. Write a function `inspect` that takes a reference to a String, returns nothing, but
     // prints whether the contents of the String is plural or singular. Then uncomment and run this
