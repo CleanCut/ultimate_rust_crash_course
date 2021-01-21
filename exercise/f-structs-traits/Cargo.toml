@@ -1,5 +1,5 @@
 [package]
-name = "f-structs-traits"
+name = "f_structs_traits"
 version = "0.1.0"
 authors = ["Nathan Stocks <nathan.stocks@gmail.com>"]
 edition = "2018"

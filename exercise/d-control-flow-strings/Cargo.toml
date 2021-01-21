@@ -1,5 +1,5 @@
 [package]
-name = "d-control-flow-strings"
+name = "d_control_flow_strings"
 version = "0.1.0"
 authors = ["Nathan Stocks <nathan.stocks@gmail.com>"]
 edition = "2018"
