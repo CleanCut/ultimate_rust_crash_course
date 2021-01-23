@@ -25,10 +25,9 @@ already have an old version of Rust installed, then run `rustup update` to insta
 
 ```shell
 $ rustc --version
-rustc 1.42.0 (b8cedc004 2020-03-09)
+rustc 1.49.0 (e1884a8e3 2020-12-29)
 $ cargo --version
-cargo 1.42.0 (86334295e 2020-01-31)
-
+cargo 1.49.0 (d00d64df9 2020-12-05)
 ```
 
 - Clone or download this repository to your computer.
@@ -77,15 +76,15 @@ communication tools to contact me, or [open an issue]. Either way. 😄
 
 For your convenience, here is a list of all the exercises, with links to view the code on GitHub.
 
-- [Exercise A - Variables & Scope](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/a-variables)
-- [Exercise B - Functions](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/b-functions)
-- [Exercise C - Simple Types](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/c-simple-types)
-- [Exercise D - Control Flow & Strings](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/d-control-flow-strings)
-- [Exercise E - Ownership & References](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/e-ownership-references)
-- [Exercise F - Structs & Traits](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/f-structs-traits)
-- [Exercise G - Collections & Enums](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/g-collections-enums)
-- [Exercise H - Closures & Threads](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/h-closures-threads)
-- [Exercise Z - Final Project](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/z-final-project)
+- [Exercise A - Variables & Scope](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/a_variables)
+- [Exercise B - Functions](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/b_functions)
+- [Exercise C - Simple Types](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/c_simple_types)
+- [Exercise D - Control Flow & Strings](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/d_control_flow_strings)
+- [Exercise E - Ownership & References](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/e_ownership_references)
+- [Exercise F - Structs & Traits](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/f_structs_traits)
+- [Exercise G - Collections & Enums](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/g_collections_enums)
+- [Exercise H - Closures & Threads](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/h_closures_threads)
+- [Exercise Z - Final Project](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/z_final_project)
 
 # Projects
 
