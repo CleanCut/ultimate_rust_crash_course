@@ -1,5 +1,5 @@
 [package]
-name = "h-closures-threads"
+name = "h_closures_threads"
 version = "0.1.0"
 authors = ["Nathan Stocks <cleancut@github.com>"]
 edition = "2018"
