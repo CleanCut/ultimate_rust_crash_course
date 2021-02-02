@@ -4,7 +4,10 @@
 // want to bite something.  Once this trait is defined, you should be able to run the program with
 // `cargo run` without any errors.
 //
-//  trait Bite...
+trait Bite {
+    //fn bite(self: &mut Self);
+    fn bite(&mut self);
+}
 
 
 // 2. Now create a struct named Grapes with a field that tracks how many grapes are left.  If you
@@ -13,12 +16,20 @@
 //
 // #[derive(Debug)] // include this line right before your struct definition
 // struct Grapes...
-
+#[derive(Debug)]
+struct Grapes {
+    amount_left: u32,
+}
 
 // 3. Implement Bite for Grapes.  When you bite a Grapes, subtract 1 from how many grapes are left.
 // If you need a hint, look at how it was done for Carrot at the bottom of this file.
 //
 // impl Bite for...
+impl Bite for Grapes {
+    fn bite(&mut self) {
+        self.amount_left -= 1;
+    }
+}
 
 
 fn main() {
@@ -30,9 +41,9 @@ fn main() {
     // 4. Uncomment and adjust the code below to match how you defined your
     // Grapes struct.
     //
-    //let mut grapes = Grapes { amount_left: 100 };
-    //grapes.bite();
-    //println!("Eat a grape: {:?}", grapes);
+    let mut grapes = Grapes { amount_left: 100 };
+    grapes.bite();
+    println!("Eat a grape: {:?}", grapes);
 
     // Challenge: Uncomment the code below. Create a generic `bunny_nibbles`
     // function that:
