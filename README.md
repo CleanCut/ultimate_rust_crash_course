@@ -92,5 +92,5 @@ For your convenience, here is a list of all the exercises, with links to view th
 
 
 [exercises]: https://github.com/CleanCut/ultimate_rust_crash_course#exercises
-[open an discussion]: https://github.com/CleanCut/rust_programming/discussions/new
+[open an discussion]: https://github.com/CleanCut/ultimate_rust_crash_course/discussions/new
 [Ultimate Rust Crash Course]: https://agileperception.com/ultimate_rust_crash_course
