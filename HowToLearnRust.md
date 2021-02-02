@@ -75,7 +75,7 @@ found these books _especially_ useful and high quality:
 - [The Rust Programming Language](https://doc.rust-lang.org/book/), aka "The Book" - the official free online book 
   about the language, though you can [purchase a physical copy](https://amzn.to/2Li5ymI) if you prefer.
 - [Programming Rust](https://amzn.to/2KC72XV) - The O'Reilly book by Jim Blandy and Jason Orendorff.  Fantastic book
-  focused on using the Rust language, but it covers only the 2015 edition. Hopefully they release a 2nd edition in the future.
+  focused on using the Rust language, but it covers only the 2015 edition. They are working on a 2nd edition at the time that I'm writing this.
 
 **Informational**
 
@@ -87,7 +87,7 @@ found these books _especially_ useful and high quality:
 - [The Edition Guide](https://rust-lang-nursery.github.io/edition-guide/introduction.html) - Differences between Rust 2015 and Rust 2018
 - [String Formatting](https://doc.rust-lang.org/std/fmt/index.html) - `print!()`, `println!()`, `format!()`, etc. and
   how to deal with the format string.
-- [Firefox has over 1.5 million lines of Rust Code](https://www.openhub.net/p/firefox/analyses/latest/languages_summary)
+- [Firefox has over 3 million lines of Rust Code](https://www.openhub.net/p/firefox/analyses/latest/languages_summary)
   
 **More information about things we learned**
 - [Cargo](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html) and
