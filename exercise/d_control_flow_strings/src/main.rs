@@ -44,7 +44,7 @@ fn double() {
     // with `cargo run double`  Hint: The answer is 9 times.
 
 
-    println!("You can double x {} times before it is larger than 500", count);
+    println!("You can double x {} times until x is larger than 500", count);
 }
 
 fn count(arg: String) {
