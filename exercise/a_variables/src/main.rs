@@ -1,4 +1,4 @@
-
+#![allow(unused_variables)]
 const STARTING_MISSILES :i32 = 8;
 const READY_AMOUNT : i32 = 2;
 
@@ -10,5 +10,7 @@ fn main() {
 
     println!("Firing {} of my {} missiles...!", ready, missiles);
 
-    println!("{} missles left", missiles - ready);
+    missiles = missiles - ready;
+
+    println!("{} missles left", missiles);
 }

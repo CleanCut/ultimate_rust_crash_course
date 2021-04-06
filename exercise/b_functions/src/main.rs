@@ -11,8 +11,8 @@ fn main() {
     // doing `cargo run` should succeed and print something out.
     {
         let area = area_of(width, height);
+        println!("Area is {}", area);
     }
-    println!("Area is {}", area);
 
     // 2. The area that was calculated is not correct! Go fix the area_of() function below, then run
     //    the code again and make sure it worked (you should get an area of 28).
@@ -25,16 +25,20 @@ fn main() {
     //
     // If you get stuck, remember that this is *very* similar to what `area_of` does.
     //
-    //println!("Volume is {}", volume(width, height, depth));
+    println!("Volume is {}", volume(width, height, depth));
 }
 
 fn area_of(x: i32, y: i32) -> i32 {
     // 2a. Fix this function to correctly compute the area of a rectangle given
     // dimensions x and y by multiplying x and y and returning the result.
     //
-    return 0;
+    x * y
     // Challenge: The previous line is not idiomatic (not recommended best practice).
     //            Run `cargo clippy`, figure out what's wrong, and fix it.  Once it is fixed,
     //            `cargo clippy` won't return areas, and `cargo run` will still produce the same
     //            output. See also https://github.com/rust-lang/rust-clippy
+}
+
+fn volume(w: i32, h: i32, d:i32) -> i32 {
+    w * h * d
 }
