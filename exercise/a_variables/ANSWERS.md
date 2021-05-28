@@ -1,9 +1,24 @@
 # Answers A: Multiply
 
 ### Part 1
-- `cargo new variables`
+
+```shell
+$ cargo new variables
+```
+
+```toml
+# Cargo.toml
+
+[package]
+name = "variables"
+version = "2.3.4"
+# ...
+```
+
 
 ```rust
+// src/main.rs
+
 fn main() {
     let missiles = 8;
     let ready = 2;
@@ -12,7 +27,24 @@ fn main() {
 
 ```
 
+```shell
+$ cargo run
+```
+
 ### Part 2
+
+```rust
+// src/main.rs
+
+fn main() {
+    let missiles = 8; // Fix error by doing: let mut missiles = 8
+    let ready = 2;
+    println!("Firing {} of my {} missiles...", ready, missiles);
+    missiles = missiles - ready; // Error!
+    println!("{} missiles left", missiles);
+}
+```
+
 
 ```rust
 const STARTING_MISSILES: i32 = 8;
@@ -74,7 +106,7 @@ fn main() {
 }
 ```
 
-- Instead of changing missiles, just print `missiles - loaded` in the second `println(...)`
+- Instead of changing missiles, use the value `missiles - ready` directly in the second `println!(...)`
   - What does cargo say when you run your program?  
 
 It gives this warning:
@@ -90,4 +122,16 @@ It gives this warning if my unused variable is named `jet`:
 
 ```
 warning: unused variable: `jet`
+```
+
+- Try modifying a constant in main() (for example, `READY_AMOUNT = 1`). What does the error look like?
+
+```
+error[E0070]: invalid left-hand side of assignment
+ --> src/main.rs:5:18
+  |
+5 |     READY_AMOUNT = 1;
+  |     ------------ ^
+  |     |
+  |     cannot assign to this expression
 ```
