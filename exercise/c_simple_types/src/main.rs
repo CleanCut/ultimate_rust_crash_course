@@ -32,7 +32,7 @@ fn main() {
     // 4. Pass the `on_off` function the value `true` from the variable `mess`.  Done correctly,
     // `cargo run` will produce the additional output "Lights are on!" I'll get you started:
     //
-    //on_off(mess.2
+    //on_off(mess.2 ...);
 
     // 5.  What a mess -- functions in a binary! Let's get organized!
     //
