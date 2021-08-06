@@ -5,10 +5,13 @@ live at O'Reilly virtual events, or in person.  You will get the most out of thi
 experience by trying to accomplish the [exercises] in this repository and watching (or attending)
 the instructor-led training.
 
-This repository is for you hands-on-learners who are ready to roll.
+In other words, this repository is for you hands-on-learners!
 
 I use macOS, and that is what I developed this course on.  Everything _ought_ to work similarly on
-major Linux distributions and Windows. Please [contact me](mailto:nathan.stocks@gmail.com) ASAP if you have trouble with anything on this page.
+major Linux distributions and Windows. Please [contact me](mailto:nathan@agileperception.com) ASAP
+if you have trouble with anything on this page.
+
+_Did you like this course? Check out the next one: [Ultimate Rust 2: Intermediate Concepts]_
 
 ## Install Rust
 
@@ -23,9 +26,9 @@ already have an old version of Rust installed, then run `rustup update` to insta
 
 ```shell
 $ rustc --version
-rustc 1.49.0 (e1884a8e3 2020-12-29)
+rustc 1.54.0 (a178d0322 2021-07-26)
 $ cargo --version
-cargo 1.49.0 (d00d64df9 2020-12-05)
+cargo 1.54.0 (5ae8d74b3 2021-06-22)
 ```
 
 - Clone or download this repository to your computer.
@@ -35,6 +38,8 @@ cargo 1.49.0 (d00d64df9 2020-12-05)
 Please do the following (see the [How To Learn Rust](https://github.com/CleanCut/ultimate_rust_crash_course/blob/master/HowToLearnRust.md)
 page for details on all of these)
 - [ ] Choose an IDE (or Editor) and configure it with Rust support and customize it to your liking
+  - **VS Code users**: Please use the [`rust-analyzer`] extension. **_If you have the `rust` extension installed, please uninstall it!_**
+  - **IntelliJ users**: Please use the [`intellij-rust`] extension.
 - [ ] Choose one place to "find answers" and either introduce yourself (if it's a forum, IRC, etc.) or find the answer
       to one question you have.
 - [ ] Try doing something in Rust!  If you don't have a better idea, then just do this:
@@ -94,3 +99,6 @@ For your convenience, here is a list of all the exercises, with links to view th
 [exercises]: https://github.com/CleanCut/ultimate_rust_crash_course#exercises
 [open an discussion]: https://github.com/CleanCut/ultimate_rust_crash_course/discussions/new
 [Ultimate Rust Crash Course]: https://agileperception.com/ultimate_rust_crash_course
+[Ultimate Rust 2: Intermediate Concepts]: https://github.com/CleanCut/ultimate_rust2
+[`rust-analyzer`]: https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer
+[`intellij-rust`]: https://intellij-rust.github.io/
