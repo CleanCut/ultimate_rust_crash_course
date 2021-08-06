@@ -5,18 +5,21 @@ Rust will put you on a path that will lead to mastering the subject.
 
 ### IDE / Editor
 
-Big, bloated IDE's can actually be really helpful in learning Rust.  IDE support is part of the core Rust project, and
-it is already getting really good.  Much more than just syntax highlighting, an IDE like VS Code or IntelliJ will
-integrate with the compiler and show you type hints, compiler check errors, and all sorts of good stuff inline.
+Though not always as light and nimble as a dedicated editor, an IDE can be really helpful in learning Rust.  IDE support is part of the core Rust project, and it works well.  Much more than just syntax highlighting, an IDE like [VS Code] or [IntelliJ] will integrate with the compiler and offer type hints, display errors, link to documentation, offer code completion, and much more.
 
 - Google the terms: `rust (name of the IDE or Editor you use)`
-  - Need a suggestion? Visual Studio Code and IntelliJ are both great choices (and there are many more...)
+  - Need a suggestion? [Visual Studio Code] and [IntelliJ] are both great choices (and there are many more...)
   - Find the correct way to install Rust support for your IDE or Editor (it's often a plugin)
-  - (Optional) Install TOML support, which is often separate from Rust support ([TOML](https://github.com/toml-lang/toml)
+  - Install TOML support, which is usually separate from Rust support ([TOML](https://github.com/toml-lang/toml)
     is the config file format that Rust uses)
   - ...wait for it...
   - Be amazed at all the helpful auto-complete, etc. that turns on.  Yay!
   - Customize your editor to your liking.
+
+[VS Code]: https://code.visualstudio.com/
+[Visual Studio Code]: https://code.visualstudio.com/
+[IntelliJ]: https://www.jetbrains.com/idea/
+
 
 ### Find Answers
 
@@ -37,9 +40,9 @@ You are always going to have questions.  Here is how you find the answers.
 
 ### Play Around
 
-Code something.  Don't just sit and watch the tutorial.  Try stuff out!
+Code something.  Don't just sit and watch the course.  Try stuff out!
 
-- Do the stuff in the tutorial!
+- Do the [exercises](https://github.com/CleanCut/ultimate_rust_crash_course#exercises)!
 - Don't be afraid to just `cargo new blah` and write a 5-line throwaway program to try something out.
 - Start an interesting little project
   - If you get stuck, or the project gets boring...no worries! Just start another interesting little project...
@@ -58,9 +61,9 @@ Code something.  Don't just sit and watch the tutorial.  Try stuff out!
 
 There are tools that help you learn as well.
 
-- [Clippy](https://github.com/rust-lang-nursery/rust-clippy) is a super-amazing linter.  It will tell you how to change
+- [Clippy](https://github.com/rust-lang/rust-clippy) is a super-amazing linter.  It will tell you how to change
   working code into _idiomatic_ and _high-performing_ code.
-- [rustfmt](https://github.com/rust-lang-nursery/rustfmt) will format your code according to Rust style guidelines.
+- [rustfmt](https://github.com/rust-lang/rustfmt) will format your code according to Rust style guidelines.
   There's only one set of Rust style guidelines...so there's nothing to argue about!  Unfortunately, the project is 
   right in the middle of a major overhaul...so it pretty much only works if you're using the nightly compiler (sigh).
 
@@ -72,10 +75,10 @@ found these books _especially_ useful and high quality:
 
 **Books**
 
+- [Programming Rust](https://amzn.to/3ivkekS) - The O'Reilly book by Jim Blandy and Jason Orendorff.  Fantastic book
+  focused on using the Rust language. This is the book _I_ used to learn Rust.
 - [The Rust Programming Language](https://doc.rust-lang.org/book/), aka "The Book" - the official free online book 
-  about the language, though you can [purchase a physical copy](https://amzn.to/2Li5ymI) if you prefer.
-- [Programming Rust](https://amzn.to/2KC72XV) - The O'Reilly book by Jim Blandy and Jason Orendorff.  Fantastic book
-  focused on using the Rust language, but it covers only the 2015 edition. They are working on a 2nd edition at the time that I'm writing this.
+  about the language, though you can [purchase a physical copy](https://amzn.to/2Vq0giK) if you prefer.
 
 **Informational**
 
@@ -84,7 +87,7 @@ found these books _especially_ useful and high quality:
 **Things we mentioned but didn't cover in depth**
 - [TOML Format](https://github.com/toml-lang/toml) - the config file format Rust uses
 - [Semantic Versioning](https://semver.org/) and [Cargo's Version Field Rules](https://doc.rust-lang.org/cargo/reference/manifest.html#the-version-field)
-- [The Edition Guide](https://rust-lang-nursery.github.io/edition-guide/introduction.html) - Differences between Rust 2015 and Rust 2018
+- [The Edition Guide](https://doc.rust-lang.org/nightly/edition-guide/introduction.html) - Differences between Rust 2015 and Rust 2018
 - [String Formatting](https://doc.rust-lang.org/std/fmt/index.html) - `print!()`, `println!()`, `format!()`, etc. and
   how to deal with the format string.
 - [Firefox has over 3 million lines of Rust Code](https://www.openhub.net/p/firefox/analyses/latest/languages_summary)
