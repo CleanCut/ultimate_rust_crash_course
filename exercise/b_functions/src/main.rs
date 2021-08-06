@@ -33,8 +33,8 @@ fn area_of(x: i32, y: i32) -> i32 {
     // dimensions x and y by multiplying x and y and returning the result.
     //
     return 0;
-    // Challenge: The previous line is not idiomatic (not recommended best practice).
-    //            Run `cargo clippy`, figure out what's wrong, and fix it.  Once it is fixed,
-    //            `cargo clippy` won't return areas, and `cargo run` will still produce the same
-    //            output. See also https://github.com/rust-lang/rust-clippy
+    // Challenge: It isn't idiomatic (the normal way a Rust programmer would do things) to use
+    //            `return` on the last line of a function. Change the last line to be a
+    //            "tail expression" that returns a value without using `return`.
+    //            Hint: `cargo clippy` will warn you about this exact thing.
 }
