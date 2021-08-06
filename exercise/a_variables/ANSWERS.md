@@ -76,7 +76,7 @@ fn main() {
 }
 ```
 
-- Try binding the variables all at once on one line using a pattern (parenthesis and commas) -- can you figure out where "mut" goes?
+- Try binding the variables all at once on one line using a pattern (parentheses and commas) -- can you figure out where `mut` goes?
 
 ```rust
 const STARTING_MISSILES: i32 = 8;
@@ -91,8 +91,7 @@ fn main() {
 
 ```
 
-- Can you figure out the correct type annotation when you assign them all in one line?
-  Hint: it will use the same sort of pattern as the variables and values.
+- Can you figure out the correct type annotation when you assign them all in one line? Hint: it will use the same sort of pattern as the variables and values.
 
 ```rust
 const STARTING_MISSILES: i32 = 8;
