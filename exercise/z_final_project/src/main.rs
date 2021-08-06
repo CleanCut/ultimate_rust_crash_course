@@ -153,8 +153,7 @@ fn invert(infile: String, outfile: String) {
 fn grayscale(infile: String, outfile: String) {
     // See blur() for an example of how to open an image.
 
-    // .grayscale() takes no arguments and converts the image in-place, so
-    // you will use the same image to save out to a different file.
+    // .grayscale() takes no arguments. It returns a new image.
 
     // See blur() for an example of how to save the image.
 }
