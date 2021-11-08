@@ -52,6 +52,16 @@ fn main() {
 
         // **OPTION**
         // Brighten -- see the brighten() function below
+        "brighten" => {
+            if args.len() != 2 {
+                print_usage_and_exit();
+            }
+
+            let infile = args.remove(0);
+            let outfile = args.remove(0);
+
+            brighten(infile, outfile);
+        }
 
         // **OPTION**
         // Crop -- see the crop() function below
@@ -76,6 +86,10 @@ fn main() {
 
         // **OPTION**
         // Generate -- see the generate() function below -- this should be sort of like "fractal()"!
+        "generate" => {
+            let outfile = args.pop().unwrap();
+            generate(outfile);
+        }
 
         // For everything else...
         _ => {
@@ -87,6 +101,7 @@ fn main() {
 fn print_usage_and_exit() {
     println!("USAGE (when in doubt, use a .png extension on your filenames)");
     println!("blur INFILE OUTFILE");
+    println!("brighten INFILE OUTFILE");
     // **OPTION**
     // Print useful information about what subcommands and arguments you can use
     // println!("...");
@@ -106,12 +121,16 @@ fn blur(infile: String, outfile: String) {
 
 fn brighten(infile: String, outfile: String) {
     // See blur() for an example of how to open / save an image.
+    let img = image::open(infile).expect("failed to open the file to brighten");
 
     // .brighten() takes one argument, an i32.  Positive numbers brighten the
     // image. Negative numbers darken it.  It returns a new image.
+    let img2 = img.brighten(75);
 
     // Challenge: parse the brightness amount from the command-line and pass it
     // through to this function.
+
+    img2.save(outfile).unwrap();
 }
 
 fn crop(infile: String, outfile: String) {
@@ -160,6 +179,16 @@ fn grayscale(infile: String, outfile: String) {
 
 fn generate(outfile: String) {
     // Create an ImageBuffer -- see fractal() for an example
+    let width = 800;
+    let height = 800;
+
+    let mut imgbuf = image::ImageBuffer::new(width, height);
+
+    for (x, y, pixel) in imgbuf.enumerate_pixels_mut() {
+        *pixel = image::Rgb([255, 0, 0]);
+    }
+
+    imgbuf.save(outfile);
 
     // Iterate over the coordinates and pixels of the image -- see fractal() for an example
 
