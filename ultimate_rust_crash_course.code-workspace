@@ -1,0 +1,42 @@
+{
+	"folders": [
+		{
+			"name": "root",
+			"path": "./",
+
+		},
+		{
+			"path": "./examples/hello"
+		},
+		{
+			"path": "./exercise/a_variables"
+		},
+		{
+			"path": "./exercise/c_simple_types"
+		},
+		{
+			"path": "./exercise/d_control_flow_strings"
+		},
+		{
+			"path": "./exercise/e_ownership_references"
+		},
+		{
+			"path": "./exercise/f_structs_traits"
+		},
+		{
+			"path": "./exercise/g_collections_enums"
+		},
+		{
+			"path": "./exercise/h_closures_threads"
+		},
+		{
+			"path": "./exercise/z_final_project"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"examples": true,
+			"exercise": true
+		  }
+	}
+}
