@@ -74,7 +74,7 @@ fn on_off(val: bool) {
 fn print_distance(z: (f32, f32)) {
     // Using z.0 and z.1 is not nearly as nice as using x and y.  Lucky for
     // us, Rust supports destructuring function arguments.  Try replacing "z" in
-    // the parameter list above with "(x, y)" and then adjust the a function
+    // the parameter list above with "(x, y)" and then adjust the function
     // body to use x and y.
     println!(
         "Distance to the origin is {}",
