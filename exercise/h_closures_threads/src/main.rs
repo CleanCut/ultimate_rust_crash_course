@@ -16,8 +16,8 @@ fn expensive_sum(v: Vec<i32>) -> i32 {
     // either need to dereference the argument once in the parameter list like this: `|&x|` or you
     // will need to dereference it each time you use it in the expression like this: `*x`
     v.iter()
-        // .filter() goes here
-        // .map() goes here
+        .filter(|&x| x % 2 == 0) 
+        .map(|&x| x * x) 
         .sum()
 }
 
