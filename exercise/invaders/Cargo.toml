@@ -7,6 +7,5 @@ edition = "2021"
 
 [dependencies]
 crossterm = "0.17.5"
-kira = "0.6.0"
 rusty_time = "0.11.0"
 soloud = "1.0.2"

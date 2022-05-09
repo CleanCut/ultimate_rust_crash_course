@@ -1,5 +1,7 @@
 use std::error::Error;
-use std::io;
+use std::{io, thread};
+use std::env::current_exe;
+use std::sync::mpsc;
 use std::time::Duration;
 use soloud::*;
 use crossterm::{
@@ -8,6 +10,8 @@ use crossterm::{
     terminal::{self, EnterAlternateScreen, LeaveAlternateScreen},
     ExecutableCommand,
 };
+use invaders::{frame, render};
+use invaders::frame::new_frame;
 
 fn main() -> Result<(), Box<dyn Error>> {
     println!("Hello, world!");
@@ -17,8 +21,27 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     play_startup_sound();
 
+    let (render_tx, render_rx) = mpsc::channel();
+    let render_handle = thread::spawn(move || {
+        let mut last_frame = new_frame();
+        let mut stdout = io::stdout();
+        render::force_render(&mut stdout, &last_frame);
+
+        loop {
+            let current_frame = match render_rx.recv() {
+                Ok(frame) => frame,
+                Err(_) => break,
+            };
+
+            render::render(&mut stdout, &current_frame, &last_frame);
+            last_frame = current_frame;
+        }
+    });
+
     // Main game loop
     'gameloop: loop {
+        let current_frame = new_frame();
+
         while event::poll(Duration::default())? {
             if let Event::Key(key_event) = event::read()? {
                 match key_event.code {
@@ -29,7 +52,15 @@ fn main() -> Result<(), Box<dyn Error>> {
                 }
             }
         }
+
+        // below we will silently ignore errors because of:
+        // let _ =
+        let _ = render_tx.send(current_frame);
+        thread::sleep(Duration::from_millis(1));
     }
+
+    drop(render_tx);
+    render_handle.join().unwrap();
 
     // Terminal cleanup
     cleanup_terminal()?;
