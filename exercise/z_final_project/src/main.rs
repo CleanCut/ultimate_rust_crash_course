@@ -87,6 +87,7 @@ fn main() {
 fn print_usage_and_exit() {
     println!("USAGE (when in doubt, use a .png extension on your filenames)");
     println!("blur INFILE OUTFILE");
+    println!("fractal OUTFILE");
     // **OPTION**
     // Print useful information about what subcommands and arguments you can use
     // println!("...");
