@@ -1,0 +1,9 @@
+[package]
+name = "variables"
+version = "2.3.4"
+authors = ["Michael Stallings <stall84@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
