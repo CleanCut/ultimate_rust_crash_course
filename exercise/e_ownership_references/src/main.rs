@@ -36,8 +36,15 @@ fn main() {
 
     // Try running this program with "boat", "banana", and "grapes" as the arguments :-)
 
-    // Challenge: Write a function "add" that takes *references* to two integer arguments,
-    // dereferences them and adds them together, and returns the result.
+    // Challenge: Write a function "bedazzle" that takes a mutable reference to a String and
+    // ignores what is in the string and replaces the contents of the string with the String
+    // "sparkly". Then uncomment the code below.
     //
-    // println!("1 + 2 = {}, even via references", add(&1, &2));
+    // Hint: You will need to dereference the mutable reference in order to assign it a
+    // new value.
+    //
+    // let mut material = "mud".to_string();
+    // println!("This material is just `{}`.", material);
+    // bedazzle(&mut material);
+    // println!("Wow! Now the material is `{}`!", material);
 }
