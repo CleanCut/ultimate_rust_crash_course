@@ -1,4 +1,4 @@
-# Answers A: Multiply
+# Answers to Exercise A
 
 ### Part 1
 
