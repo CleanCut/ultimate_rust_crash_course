@@ -29,7 +29,7 @@ fn main() {
     // scope, then you will have to change the code above again so that `answer` is in this scope.
 
     // let sum = ...  // call your `add` function and pass it `number` and `answer` as arguments.
-    // println!("{} + {} = {}", number, answer, sum)
+    // println!("{} + {} = {}", number, answer, sum);
 
     // 4. You can declare a variable without initializing it, but the compiler must be able to
     // ensure that it will always be initialized before you can use it.
@@ -41,7 +41,7 @@ fn main() {
     // if answer < 100 {
     //     countdown = 10;
     // } else {
-    //     println!("The answer is clearly wrong.")
+    //     println!("The answer is clearly wrong.");
     //     // set countdown to some value here
     // }
     // println!("The countdown begins at {}", countdown);
