@@ -3,7 +3,7 @@
 // For each step of this exercise, you should be able to run the program before and after your
 // change without affecting the output of the program.
 //
-// Move the constants below (ONE, TWO, and THREE) into the library:
+// Move the constants below (FIRST, SECOND, and THIRD) into the library:
 // - Create a `src/lib.rs` file
 // - Move all of the constants into lib.rs
 // - Make the constants public by adding the `pub` keyword in front of them
@@ -11,9 +11,9 @@
 //
 // Hint: the name of the library is defined in Cargo.toml
 
-const ONE: i32 = 1;
-const TWO: i32 = 2;
-const THREE: i32 = 3;
+const FIRST: i32 = 1;
+const SECOND: i32 = 2;
+const THIRD: i32 = 3;
 
 // 2. Create a library module named `sound` and move the animal functions into it.
 //
@@ -37,13 +37,13 @@ fn fox() {
 }
 
 fn main() {
-    print!("Listening to animal {}: ", ONE);
+    print!("Listening to animal {}: ", FIRST);
     dog();
 
-    print!("Listening to animal {}: ", TWO);
+    print!("Listening to animal {}: ", SECOND);
     cat();
 
-    print!("Listening to animal {}: ", THREE);
+    print!("Listening to animal {}: ", THIRD);
     fox();
 }
 
