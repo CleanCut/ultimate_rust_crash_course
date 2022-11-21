@@ -7,8 +7,8 @@ fn main() {
     // 1. Try running the code and looking at the error. We would like to use the variable name
     // `number` as an i32 (an integer), but it is already used as an f64 (a floating point number).
     //
-    // - Uncomment the commented partially-complete code below
-    // - Complete the line so that you shadow the old `number` variable with a new `number` variable
+    // - Uncomment the commented-out code below
+    // - Complete the code to shadow the old `number` variable with a new `number` variable
     //   of the correct type.
 
     // ... = convert_to_integer(number); // uncomment this line and finish shadowing `number`
