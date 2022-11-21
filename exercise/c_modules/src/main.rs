@@ -3,7 +3,7 @@
 // For each step of this exercise, you should be able to run the program before and after your
 // change without affecting the output of the program.
 //
-// Move the constants (ONE, TWO, and THREE) below into the library:
+// Move the constants below (ONE, TWO, and THREE) into the library:
 // - Create a `src/lib.rs` file
 // - Move all of the constants into lib.rs
 // - Make the constants public by adding the `pub` keyword in front of them
