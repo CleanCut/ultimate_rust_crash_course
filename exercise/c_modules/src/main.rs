@@ -22,7 +22,8 @@ const THIRD: i32 = 3;
 // - Move the `dog`, `cat`, and `fox` functions into sound.rs
 // - Make the functions public by adding the `pub` keyword in front of them
 // - Add a `use` statement to bring the `sound` module into scope.
-// - Change the function calls to access the functions through their parent module.
+// - Change the function calls to access the functions through the `sound` module.
+//   For example: sound::dog()
 
 fn dog() {
     println!("Dog goes WOOF!");
