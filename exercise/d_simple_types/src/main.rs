@@ -2,17 +2,17 @@
 #![allow(dead_code, unused_variables)]
 
 fn main() {
-    let coords: (f32, f32) = (6.3, 15.0);
-    // 1. Pass parts of `coords` to the `print_difference` function. This should show the difference
-    // between the two numbers in coords when you do `cargo run`.  Use tuple indexing.
+    let coords: (f64, f64) = (6.3, 15.0);
+    // 1. Pass the two elements of the `coords` tuple as two separate arguments to the
+    // `print_difference` function. Use tuple indexing.
     //
-    // The `print_difference` function is defined below the `main` function. It may help if you look
-    // at how it is defined.
+    // The `print_difference` function is defined near the end of this file if you would like to
+    // look at how it is defined.
     //
     //print_difference( ... );   // Uncomment and finish this line
 
     // 2. We want to use the `print_array` function to print coords...but coords isn't an array!
-    // Create an array of type [f32; 2] and initialize it to contain the
+    // Create an array of type [f64; 2] and initialize it to contain the
     // information from coords.  Uncomment the print_array line and run the code.
     //
     //let coords_arr...               // create an array literal out of parts of `coord` here
@@ -31,7 +31,7 @@ fn main() {
     //
     //on_off(mess.2 ...);
 
-    // Challenge 1 (part A)
+    // 5. (Part A)
     //
     // Uncomment the line below, run the code, and examine the output. Then go refactor the
     // `print_distance` function according to the instructions in the comments inside that function.
@@ -39,22 +39,35 @@ fn main() {
     // print_distance(coords);
 }
 
-// Challenge 2
+// 5. (Part B)
 //
-// Reorganize the functions into a library.
+// Using `z.0` and `z.1` is not nearly as nice as using `x` and `y`.  Lucky for us, Rust supports
+// destructuring function arguments.  Try replacing `z` in the parameter list below with `(x, y)`
+// and then adjust the function body below to use `x` and `y` instead of `z.0` and `z.1`
 //
-// - Create the root library file
-// - Change the variables `coords`, `series` and `mess` to be constants and move them to the library
-// - Move the `ding` and `on_off` functions into the root (top level) of the library.
-// - Create a `print` submodule and move the functions that start with `print_*` into it.
-// - Remove the `print_` prefix from the functions in the `print` submodule.
-// - Remember to access the functions through their parent modules like this: `print::array(...)`
+// You should be able to run the code again and get the output as before.
+fn print_distance(z: (f64, f64)) {
+    println!(
+        "Distance to the origin is {}",
+        (z.0.powf(2.0) + z.1.powf(2.0)).sqrt()
+    );
+}
 
-fn print_difference(x: f32, y: f32) {
+// Challenge:
+//
+// Although types can often be inferred by the compiler, sometimes we write them out for clarity.
+// Like we did with the `let coords: (f64, f64) = ...` declaration at the top of the `main`
+// function.
+//
+// - Add the type annotation for the `series` variable in `main`.
+// - Add the type annotation for the `mess` variable in `main`. (This may be a good example of why
+//   it is nice to *not* have to add the type annotation! 😆)
+
+fn print_difference(x: f64, y: f64) {
     println!("Difference between {} and {} is {}", x, y, (x - y).abs());
 }
 
-fn print_array(a: [f32; 2]) {
+fn print_array(a: [f64; 2]) {
     println!("The coordinates are ({}, {})", a[0], a[1]);
 }
 
@@ -68,17 +81,4 @@ fn on_off(val: bool) {
     if val {
         println!("Lights are on!");
     }
-}
-
-fn print_distance(z: (f32, f32)) {
-    // Challenge 1 (part B)
-    //
-    // Using `z.0` and `z.1` is not nearly as nice as using `x` and `y`.  Lucky for us, Rust
-    // supports destructuring function arguments.  Try replacing `z` in the parameter list above
-    // with `(x, y)` and then adjust the function body below to use `x` and `y` instead of `z.0` and
-    // `z.1`
-    println!(
-        "Distance to the origin is {}",
-        (z.0.powf(2.0) + z.1.powf(2.0)).sqrt()
-    );
 }
