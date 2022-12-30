@@ -75,10 +75,12 @@ found these books _especially_ useful and high quality:
 
 **Books**
 
-- [Programming Rust](https://amzn.to/3ivkekS) - The O'Reilly book by Jim Blandy and Jason Orendorff.  Fantastic book
+- [Programming Rust, 2nd Edition](https://amzn.to/3i0NySP) - The (second edition of the) O'Reilly book by Jim Blandy, Jason Orendorff, and Leanora Tindall.  Fantastic book
   focused on using the Rust language. This is the book _I_ used to learn Rust.
 - [The Rust Programming Language](https://doc.rust-lang.org/book/), aka "The Book" - the official free online book 
   about the language, though you can [purchase a physical copy](https://amzn.to/2Vq0giK) if you prefer.
+- [Rust for Rustaceans](https://amzn.to/3Iavf8b) - A short, but incredibly action-packed book diving into some advanced topics. I loved this book. Read it after you have a solid grasp of Rust and want to go deeper.
+- [The Rustnomicon](https://doc.rust-lang.org/nomicon/) - The ultimate (unfinished, evolving) book about the deepest mysteries of Rust. Strap in!
 
 **Informational**
 
