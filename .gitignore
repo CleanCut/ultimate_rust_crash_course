@@ -13,3 +13,5 @@
 **/.vscode
 # Files from macOS
 .DS_Store
+/.idea/
+/crates.io-index.git/
