@@ -86,6 +86,7 @@ For your convenience, here is a list of all the exercises, with links to view th
 - [Exercise C - Modules](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/c_modules)
 - [Exercise D - Simple Types](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/d_simple_types)
 - [Exercise E - Control Flow](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/e_control_flow)
+- [Exercise F - Strings](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/f_strings)
 - [Exercise ? - Ownership & References](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/)
 - [Exercise ? - Structs & Traits](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/)
 - [Exercise ? - Collections & Enums](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/)
