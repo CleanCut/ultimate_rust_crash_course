@@ -1,3 +1,0 @@
-[workspace]
-members = [ "exercise/*" ]
-exclude = [ "exercise/a_variables" ]
