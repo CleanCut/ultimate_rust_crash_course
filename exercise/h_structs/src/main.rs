@@ -1,55 +1,75 @@
+// Silence some warnings so they don't distract from the exercise.
+#![allow(dead_code, unused_mut)]
+
 // 1. Create a struct named `Polygon` with the fields and their types listed below. Then build the
 // program with `cargo build` to ensure you don't have any syntax errors.
 //
-// - visible - bool
-// - sides - u32
 // - name - String
+// - sides - u32
+// - visible - bool
 
 // struct Polygon ...
 
 // 2. Create an implementation block for the `Polygon` struct.
 //
 // In the implementation block define an associated function named `new` that:
-// - takes a String value for `name` and uses it to create and return a new Polygon
-// - sets `visible` to true
-// - sets `sides` to 3
+// - accepts an argument `name` of type `String`
+// - returns a `Polygon` (you may use `Self` as an alias for `Polygon` inside of the `impl` block)
+//   - with `name` set to the value from the `name` argument.
+//   - with `sides` set to `3`
+//   - with `visible` set to `true`
+//
+// NOTE: Associated functions do NOT take a form a `self` as their first argument (that would turn
+// the function into a method)
 //
 // Then build the program with `cargo build` to ensure you don't have any syntax errors.
 
 // impl Polygon ...
 
 fn main() {
-    // 3. Create a new mutable polygon variable by calling the Polygon's `new` associated function.
-    // Then uncomment and run the code below. Fix any errors you encounter.
+    // 3. Create a new, mutable polygon variable by calling the Polygon's `new` associated function.
+    //
+    // - Either use the name "George" or pick another name you like.
+    // - Use the scope operator `::` to access an associated function of a struct.
+    //
+    // Then uncomment and run the code below.
 
     // let mut polygon = ...
-    //
-    // println!("I see a {}-sided polygon named {}!", polygon.sides, polygon.name);
+
+    // println!(
+    //     "I see a {}-sided polygon named {}!",
+    //     polygon.sides, polygon.name
+    // );
 
     // 4. In the `impl Polygon` block above:
     //
     // - Add a method named `shape` which
-    //   - takes an immutable reference to self and
-    //   - looks at the value of the `sides` field and returns a String depending on the value:
-    //     - 3 - "triangle"
-    //     - 4 - "square"
-    //     - 5 - "pentagon"
-    //     - any other number - "polygon"
+    //   - takes an immutable reference to self
+    //   - returns a String
+    //   - depending on the value of the `sides` field returns the following strings:
+    //     - "triangle" - for 3 sides
+    //     - "square" - for 4 sides
+    //     - "pentagon" - for 5 sides
+    //     - "polygon" - for any other number of sides
     //
     // Then uncomment and run the code below.
 
-    // println!("The polygon is a {}", polygon.shape());
+    // println!(
+    //     "The polygon named {} is a {}",
+    //     polygon.name,
+    //     polygon.shape()
+    // );
 
     // 5. In the `impl Polygon` block above:
     //
     // - Add a method named `increment_sides` that
     //   - takes a mutable reference to self
-    //   - adds 1 to the `sides` field
     //   - returns nothing
+    //   - adds 1 to the `sides` field
     //
     // Then uncomment and run the code below.
 
-    // for _ in range(0..3) {
+    // for _ in 0..3 {
     //     polygon.increment_sides();
     //     println!(
     //         "The polygon now has {} sides and is the shape of a {}",
