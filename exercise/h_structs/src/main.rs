@@ -29,13 +29,12 @@
 fn main() {
     // 3. Create a new, mutable polygon variable by calling the Polygon's `new` associated function.
     //
-    // - Either use the name "George" or pick another name you like.
+    // - Use the name "George". Remember to convert the string literal to a String!
     // - Use the scope operator `::` to access an associated function of a struct.
     //
-    // Then uncomment and run the code below.
+    // Then uncomment and run the code below to see a message about the polygon.
 
     // let mut polygon = ...
-
     // println!(
     //     "I see a {}-sided polygon named {}!",
     //     polygon.sides, polygon.name
