@@ -29,8 +29,8 @@
 fn main() {
     // 3. Create a new, mutable polygon variable by calling the Polygon's `new` associated function.
     //
-    // - Use the name "George". Remember to convert the string literal to a String!
     // - Use the scope operator `::` to access an associated function of a struct.
+    // - Use the name "George". Remember to convert the string literal to a String!
     //
     // Then uncomment and run the code below to see a message about the polygon.
 
