@@ -45,9 +45,16 @@ fn main() {
     // println!("4 is {}", 4.color());
     // println!("5 is {}", 5.color());
 
-    // 3. Create a trait named `EvenOdd` with a method `is_even` that takes an immutable
-    // reference to self and returns whether or not self is even. Implement EvenOdd for i32. Then
-    // refactor the `colorful` method for `i32` to use the is_even method.
+    // 3. Let's replace the is_even function with a trait implementation!
+    //
+    // - Comment out the is_even function at the bottom of this file so you can't use it anymore.
+    // - Create a trait named `EvenOdd` with a method `is_even`. It should take an immutable
+    //   reference to self and return a bool.
+    // - Implement EvenOdd for i32. You can copy-and-paste the logic from the is_even function that
+    //   you commented out earlier.
+    // - Refactor the `colorful` method for `i32` to use the is_even method.
+    //
+    // Then you should be able to run the code without any changes to the output.
 
     // Challenge: Write a generic function named `fortune` that takes anything that implements the
     // Colorful trait and prints out the color in some message (for example: "The color I see in
@@ -75,7 +82,8 @@ fn describe_three_hats(hat1: &Hat, hat2: &Hat, hat3: &Hat) {
     }
 }
 
-// NOTE: You can use this function to check if a number is even (true) or odd (false)
+// You can use this function to check if a number is even (true) or odd (false).
+// You should comment out this function for #3.
 fn is_even(number: i32) -> bool {
     number % 2 == 0
 }
