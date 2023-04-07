@@ -1,62 +1,78 @@
+// Silence some warnings so they don't distract from the exercise.
 #![allow(dead_code)]
 
-// Items which implement the `Colorful` trait have a `color` method which will return a string
-// describing that item's color.
-trait Colorful {
-    fn color(self: &Self) -> String;
-}
-
-// 1. Define a struct `Hat` with one field `size` that is a `u8`.
-
-// struct Hat ...
-
-// 2a. Hats are colorful! Implement the `Colorful` trait which returns:
+// 1a: Create a `Colorful` trait with a single `color` method which takes an immutable reference to
+// self and returns a String describing that item's color.
 //
-// - Red - (as a String) if the size is 0 through 5
-// - Green - if the size is 6 or 7
-// - Blue - for any other size
+// You must also complete 1b before the code will compile.
+
+// trait Colorful ...
+
+// 1b. Implement the `Colorful` trait for the `Hat` struct:
+//
+// - The `colorful` method of the `Colorful` trait should return the following String values:
+//   - "red" if the size is 0 through 5
+//   - "green" - if the size is 6 or 7
+//   - "blue" - for any other size
+//
+// The code should compile once 1b is complete, but there will be no output until 1c is completed.
+
+struct Hat {
+    size: i32,
+}
 
 // impl Colorful for Hat ...
 
 fn main() {
-    // 2b. Uncomment and run the code below. The hats should be red, green, and blue--in that order.
+    // 1c. Uncomment and run the code below. If you correctly implemented Colorful for Hat, then
+    // the order of the colors in the output will be red, green, and blue.
 
     // let small_hat = Hat { size: 2 };
     // let medium_hat = Hat { size: 7 };
     // let large_hat = Hat { size: 100 };
-    // println!("The small hat is {}", small_hat.color());
-    // println!("The medium hat is {}", medium.color());
-    // println!("The large hat is {}", large_hat.color());
+    // describe_three_hats(small_hat, medium_hat, large_hat);
 
-    // 3. Implement the Colorful trait for the type i32. Then uncomment and run the code below.
+    // 2. Implement the Colorful trait for the type i32. Then uncomment and run the code below.
     //
-    // - Orange - If the number is even*
-    // - Purple - If the number is odd
+    // The `colorful` method for an i32 should return the String values:
+    //   - "orange" - If the number is even (see hint)
+    //   - "purple" - If the number is odd
     //
-    // *You may use the `is_even` function from the bottom of this file if you like.
+    // Hint: You may want to use the `is_even` function (see the bottom of this file).
 
     // for i in range(0..=3) {
     //     println!("{} is {}", i, i.color());
     // }
 
-    // 4. Implement an associated function named `new` for the `Hat` struct which takes
-    // an u8 as an argument and returns a Hat of that size.
-    //
-    // Change the code in 2b to use Hat::new( ... ) to create the hats.
-    //
-    // Note: This has nothing to do with the Colorful trait.
-
-    // Challenge 1: Write a generic function named `fortune` that takes anything that implements the
+    // 3: Write a generic function named `fortune` that takes anything that implements the
     // Colorful trait and prints out the color in some message (for example: "The color I see in
     // your future is ..."). Then uncomment and run the code below.
 
     // fortune(small_hat);
     // fortune(2);
 
-    // Challenge 2: Create a trait `
+    // Challenge 2: Create a trait named `EvenOdd` with a method `is_even` that takes an immutable
+    // reference to self and returns whether or not self is even. Implement EvenOdd for i32. Then
+    // refactor the `colorful` method for `i32` to use the is_even method.
 }
 
-// Note: Here is how to check if a number is even.
+// A helpful function
+fn describe_three_hats(hat1: &Hat, hat2: &Hat, hat3: &Hat) {
+    for hat in [hat1, hat2, hat3] {
+        let largeness = if hat.size < 3 {
+            "small"
+        } else if hat.size < 9 {
+            "medium"
+        } else {
+            "large"
+        };
+        println!("The {} hat is {}", largeness, hat.color());
+        println!("The {} hat is {}", largeness, hat.color());
+        println!("The {} hat is {}", largeness, hat.color());
+    }
+}
+
+// NOTE: A helpful function to check if a number is even.
 fn is_even(number: i32) -> bool {
     number % 2 == 0
 }
