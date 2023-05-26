@@ -7,28 +7,25 @@ fn main() {
 
     // 1. Create a Vec<String> named `things` and move all of the strings above into it. You can do
     // this by creating `things` and then calling the `push` method repeatedly, or by using the
-    // `vec!` macro.
+    // `vec!` macro. Then uncomment and run the code below.
 
     // let things ...
-    // println!("{} things: {:?}", things.len(), things); // `:?` means "the debug representation"
+    // println!("{:?}", things); // `:?` means "the debug representation"
 
-    // 2. We want to use the `animal` variable in the (commented-out) code below, but we cannot
+    // 2. Print out the length of the `things` vector using the `len` method.
+
+    // println!("things has a length of {}", ...);
+
+    // 3. We want to use the `animal` variable in the (commented-out) code below, but we cannot
     // because the value has been moved into `things`. Uncomment the code below and change it to use
     // array indexing (with square brackets []) to index into `things` to access the `fox` String.
 
     // println!("What does the {} say?", animal); // get the value from `things` instead of `animal`
 
-    // 3. Sort `things` by calling the `sort` method. The variable needs to be mutable for this to
+    // 4. Sort `things` by calling the `sort` method. The variable needs to be mutable for this to
     // compile without errors. Then uncomment and run the code below.
 
     // println!("Sorted values: {things:?}"); // variables can go inside the curly braces
-
-    // 4. Vectors can be used as efficient stacks with the `push` and `pop` methods that add or
-    // remove an item from the back of the vector. Pop the last item of `things` and store it in a
-    // variable named `last`. Then uncomment and run the code below.
-
-    // let last ...
-    // println!("After popping \"{last}\" off the end, `things` looks like: {things:?}");
 
     // 5. Use a `for` loop to print out each item in `things`. It is okay to consume `things`, since
     // we won't be using it any more after this.
