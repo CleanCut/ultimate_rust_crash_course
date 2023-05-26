@@ -1,40 +1,54 @@
-use std::collections::HashMap;
-
 fn main() {
-    // The text below is an exerpt from the book `Green Eggs & Ham` by Dr. Seuss with punctuation
-    // removed.
+    // Here are some String variables to use. There are many ways to create a String!
+    let item = String::from("socks");
+    let animal = "fox".to_string();
+    let container = "box".to_owned();
+    let material = "rocks".into(); // .into() works as long as you use the value as a String later
+
+    // 1. Create a Vec<String> named `things` and move all of the strings above into it. You can do
+    // this by creating `things` and then calling the `push` method repeatedly, or by using the
+    // `vec!` macro.
+
+    // let things ...
+    // println!("{} things: {:?}", things.len(), things); // `:?` means "the debug representation"
+
+    // 2. We want to use the `animal` variable in the (commented-out) code below, but we cannot
+    // because the value has been moved into `things`. Uncomment the code below and change it to use
+    // array indexing (with square brackets []) to index into `things` to access the `fox` String.
+
+    // println!("What does the {} say?", animal); // get the value from `things` instead of `animal`
+
+    // 3. Sort `things` by calling the `sort` method. The variable needs to be mutable for this to
+    // compile without errors. Then uncomment and run the code below.
+
+    // println!("Sorted values: {things:?}"); // variables can go inside the curly braces
+
+    // 4. Vectors can be used as efficient stacks with the `push` and `pop` methods that add or
+    // remove an item from the back of the vector. Pop the last item of `things` and store it in a
+    // variable named `last`. Then uncomment and run the code below.
+
+    // let last ...
+    // println!("After popping \"{last}\" off the end, `things` looks like: {things:?}");
+
+    // 5. Use a `for` loop to print out each item in `things`. It is okay to consume `things`, since
+    // we won't be using it any more after this.
+
+    // for ...
+
+    // Challenge: Create a vector named `buffer` containing 1024 zeroes using the `vec!` macro. This
+    // should easily fit on one line without wrapping.
+
+    // let buffer = ...
+
+    // Challenge 2: Use a `for` loop and array indexing to change each entry in `buffer` to be its
+    // index value multiplied by 2. For example:
     //
-    // `vec` is a macro that lets you define a Vec literal.
-    let poem = vec![
-        "I do not like them in a box",
-        "I do not like them with a fox",
-        "I do not like them in a house",
-        "I do not like them with a mouse",
-        "I do not like them here or there",
-        "I do not like them anywhere",
-        "I do not like green eggs and ham",
-    ];
-
-    // 1. At runtime, we decide to add another line to the end of the poem.
-    // Add `next_line` below to end of the `poem` Vec above by using the `.push` method
+    // buffer[0] should be 0
+    // buffer[1] should be 2
+    // buffer[2] should be 4
+    // etc.
     //
-    // Hint: `poem` needs to be mutable for this to work.
-    let next_line = "I do not like them Sam I am";
+    // Then uncomment and run the code below.
 
-    let mut word_map: HashMap<&str, u32> = HashMap::new();
-    for word in poem.split_whitespace() {
-        if word_map.contains_key(word) {
-            let count = word_map.get_mut(word).unwrap();
-            *count += 1;
-        } else {
-            word_map.insert(word, 1);
-        }
-    }
-
-    let mut sorted_keys = word_map.keys().collect::<Vec<_>>();
-    sorted_keys.sort();
-    for key in sorted_keys {
-        let value = word_map.get(key).unwrap();
-        println!("{key} {value}");
-    }
+    // println!("Here's a buffer full of even values: {buffer:?}");
 }
