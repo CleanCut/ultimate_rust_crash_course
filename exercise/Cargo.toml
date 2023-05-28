@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "b_functions",
+    "c_simple_types",
+    "d_control_flow_strings",
+    "e_ownership_references",
+    "f_structs_traits",
+    "g_collections_enums",
+    "h_closures_threads",
+    "z_final_project",
+]
