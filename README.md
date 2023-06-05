@@ -60,7 +60,7 @@ session) and come back here for the [exercises].
 - Training by the instructor (Nathan Stocks) in the form of the [Ultimate Rust Crash Course] or a
   live session.
 - This Repository :tada:
-- [How To Learn Rust](https://github.com/CleanCut/rust_a_crash_course/blob/master/HowToLearnRust.md)
+- [How To Learn Rust](https://github.com/CleanCut/ultimate_rust_crash_course/blob/master/HowToLearnRust.md)
 - [The Rust Standard Library](https://doc.rust-lang.org/std/)
 
 # Exercises
