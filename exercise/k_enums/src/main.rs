@@ -2,26 +2,26 @@
 #![allow(unused)]
 
 fn main() {
-    // 1. Write code that will print out the the value of maybe_fruit's wrapped string if it is a
-    // `Some` variant, and does nothing if it is a `None` variant. Use an `if` expression with the
-    // Option type's `is_some` and `unwrap` methods to implement the logic. Then run the code.
+    // 1. If `maybe_fruit` below is a `Some` variant, then print out the string it wraps. Use the
+    // Option type's `is_some` and `unwrap` methods with an `if` expression to implement the logic.
+    // Then run your code. You should get the output "apple".
 
     let maybe_fruit: Option<&str> = Some("apple");
     // if ...
 
-    // 2. Write a function that accepts an `Option<&str>` as an argument and prints out
-    // "You passed in a {}" with the value of the string in the Some variant or does nothing if the
-    // value is a None variant. Use an `if let` expression to get the value wrapped by the `Some`
-    // variant.
+    // 2. Write a function `inspect` that accepts an `Option<&str>` as an argument. Use an `if let`
+    // expression inside the function to get the value wrapped by the `Some` variant and print out
+    // "You passed in a {}" with the value of the string. The function should do nothing if the
+    // value is a `None` variant.
     //
-    // Call the function once for each of `maybe_plant` and `maybe_food`.
+    // Call the function once for `maybe_plant` and once for `maybe_food`.
     //
-    // Then run the code.
+    // Then run the code. You should get one line of output.
 
     let maybe_plant: Option<&str> = None;
     let maybe_food: Option<&str> = Some("cake");
-    // your_function(...);
-    // your_function(...);
+    // inspect(...);
+    // inspect(...);
 
     // 2.  Write a loop that passes each number in the `numbers` vector to the `do_math` function
     // and then checks the result using a `match` expression.
@@ -40,11 +40,12 @@ fn main() {
     // 3. Define an enum named `Snack` with the following variants:
     //
     // - Apple - which contains no data
-    // - Cookies - which contains an unnamed tuple with a single u8
-    // - Sandwich - which contains an unnamed struct with fields `lettuce` and `cheese`, both of
-    //   type `bool`
+    // - Cookies - which contains an unnamed tuple with a single `u8`
+    // - Sandwich - which contains an unnamed struct with fields `lettuce` and `cheese`. Both fields
+    //   are the type `bool`.
     //
-    // Then uncomment and run the code below
+    // Then uncomment and run the code below. If you defined the enum correctly, you should get
+    // output about three snacks.
 
     // let healthy_snack = Snack::Apple;
     // let sugary_snack = Snack::Cookies(18);
@@ -67,12 +68,12 @@ fn main() {
     //     );
     // }
 
-    // 4. Create an `impl` block for Snack and implement a method named `price` which takes
-    // ownership of a snack and returns a u8 representing the price of the snack according to the
-    // following rules:
+    // 4. Create an `impl` block for the `Snack` enum and implement a method named `price` which
+    // takes ownership of a Snack and returns a u8 representing the price of the snack according to
+    // the following rules:
     //
-    // - An apple's price is 5
-    // - A cookie's price is 2 times the number of cookies
+    // - The price of an apple is always 5
+    // - The price of cookies is 2 times the number of cookies
     // - A sandwich's price starts at 10, plus 1 if lettuce is true, plus 2 if cheese is true
     //
     // Hint: The signature of the method is `fn price(self) -> u8`
@@ -107,6 +108,9 @@ fn main() {
     //         println!("Snack {} is NOT an apple.", index)
     //     }
     // }
+
+    // Challenge 2: Refactor the code from (3) to use a `match` expression instead of `if let`
+    // statements. The output should remain the same.
 }
 
 fn do_math(x: i32) -> Result<i32, String> {
