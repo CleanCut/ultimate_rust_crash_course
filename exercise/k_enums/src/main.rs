@@ -9,14 +9,14 @@ fn main() {
     let maybe_fruit: Option<&str> = Some("apple");
     // if ...
 
-    // 2. Write a function `inspect` that accepts an `Option<&str>` as an argument. Use an `if let`
-    // expression inside the function to get the value wrapped by the `Some` variant and print out
-    // "You passed in a {}" with the value of the string. The function should do nothing if the
-    // value is a `None` variant.
+    // 2. Write a function `inspect` that accepts an `Option<&str>` as an argument and does not
+    // return anything. Use an `if let` expression inside the function to get the value wrapped by
+    // the `Some` variant and print out "You passed in a {}" with the value of the string. The
+    // function should do nothing if the value is a `None` variant.
     //
     // Call the function once for `maybe_plant` and once for `maybe_food`.
     //
-    // Then run the code. You should get one line of output.
+    // Then run the code. You should get one line of output about cake.
 
     let maybe_plant: Option<&str> = None;
     let maybe_food: Option<&str> = Some("cake");
@@ -33,8 +33,10 @@ fn main() {
     // - If the result is an `Ok`, then print out "The result was {}", with the value of the
     //   wrapped number
     // - If the result is an `Err`, then print out the wrapped error message string
+    //
+    // You should get one error message with a sad face, and one line with the number 100.
 
-    let numbers = vec![0, 1, 2, 3];
+    // let numbers = vec![0, 1];
     // for ...
 
     // 3. Define an enum named `Snack` with the following variants:
@@ -79,7 +81,7 @@ fn main() {
     // Hint: The signature of the method is `fn price(self) -> u8`
     //
     // Then uncomment and run the code below. You should see three lines ending with the costs of
-    // $5, $36, and $13.
+    // $5, $36, and $12.
 
     // println!("An apple costs ${}", healthy_snack.price());
     // if let Snack::Cookies(number) = sugary_snack {
@@ -109,8 +111,9 @@ fn main() {
     //     }
     // }
 
-    // Challenge 2: Refactor the code from (3) to use a `match` expression instead of `if let`
-    // statements. The output should remain the same.
+    // Challenge 2: Refactor the code from (3) to put all off the variables into a vector, then loop
+    // through the vector and use a `match` expression instead of `if let` statements. The output
+    // should remain the same.
 }
 
 fn do_math(x: i32) -> Result<i32, String> {
