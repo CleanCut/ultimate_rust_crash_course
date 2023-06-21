@@ -36,7 +36,7 @@ fn main() {
     //
     // You should get one error message with a sad face, and one line with the number 100.
 
-    // let numbers = vec![0, 1];
+    let numbers = vec![0, 1];
     // for ...
 
     // 4. Define an enum named `Snack` with the following variants:
