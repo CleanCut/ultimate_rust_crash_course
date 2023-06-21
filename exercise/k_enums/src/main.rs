@@ -23,7 +23,7 @@ fn main() {
     // inspect(...);
     // inspect(...);
 
-    // 2.  Write a loop that passes each number in the `numbers` vector to the `do_math` function
+    // 3.  Write a loop that passes each number in the `numbers` vector to the `do_math` function
     // and then checks the result using a `match` expression.
     //
     // The `do_math` function (see bottom of this file) takes an i32 as input and returns a
@@ -39,7 +39,7 @@ fn main() {
     // let numbers = vec![0, 1];
     // for ...
 
-    // 3. Define an enum named `Snack` with the following variants:
+    // 4. Define an enum named `Snack` with the following variants:
     //
     // - Apple - which contains no data
     // - Cookies - which contains an unnamed tuple with a single `u8`
@@ -70,7 +70,7 @@ fn main() {
     //     );
     // }
 
-    // 4. Create an `impl` block for the `Snack` enum and implement a method named `price` which
+    // 5. Create an `impl` block for the `Snack` enum and implement a method named `price` which
     // takes ownership of a Snack and returns a u8 representing the price of the snack according to
     // the following rules:
     //
@@ -111,7 +111,7 @@ fn main() {
     //     }
     // }
 
-    // Challenge 2: Refactor the code from (3) to put all off the variables into a vector, then loop
+    // Challenge 2: Refactor the code from (4) to put all off the variables into a vector, then loop
     // through the vector and use a `match` expression instead of `if let` statements. The output
     // should remain the same.
 }
