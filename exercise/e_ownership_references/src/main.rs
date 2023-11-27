@@ -14,25 +14,25 @@ fn main() {
     // code with `cargo run apple` and `cargo run apples'.  Hint: use `.ends_with("s")` on the
     // String reference
     //
-    //inspect(&arg);
+    inspect(&arg);
 
     // 2. Write a function `change` that takes a *mutable* reference to a String and adds an "s" to
     // the String if it doesn't already end with "s". Then uncomment and run the code below with
     // `cargo run apple`.  Hint: use `.push_str("s")` on the mutable String reference to add an "s".
     //
-    //change(&mut arg);
-    //println!("I have many {}", arg);
+    change(&mut arg);
+    println!("I have many {}", arg);
 
     // 3. Write a function `eat` that accepts ownership of (consumes) a String and returns a bool
     // indicating whether or not the String both starts with a "b" AND contains an "a".
     // Hint 1: use `.starts_with("b")` and `.contains("a")`
     // Hint 2: `&&` is the boolean "AND" operator
     //
-    //if eat(arg) {
-    //    println!("Might be bananas");
-    //} else {
-    //    println!("Not bananas");
-    //}
+    if eat(arg) {
+        println!("Might be bananas");
+    } else {
+        println!("Not bananas");
+    }
 
     // Try running this program with "boat", "banana", and "grapes" as the arguments :-)
 
@@ -43,8 +43,30 @@ fn main() {
     // Hint: You will need to dereference the mutable reference in order to assign it a
     // new value.
     //
-    // let mut material = "mud".to_string();
-    // println!("This material is just `{}`.", material);
-    // bedazzle(&mut material);
-    // println!("Wow! Now the material is `{}`!", material);
+    let mut material = "mud".to_string();
+    println!("This material is just `{}`.", material);
+    bedazzle(&mut material);
+    println!("Wow! Now the material is `{}`!", material);
+}
+
+fn bedazzle(str: &mut String) {
+    (*str) = "sparkly".to_string()
+}
+
+fn eat(str: String) -> bool {   
+    str.starts_with('b') && str.contains('a')
+}
+
+fn change(str: &mut String) {
+    if !str.ends_with('s') {
+        str.push_str("s");
+    }
+}
+
+fn inspect(str: &String) {
+    if str.ends_with('s') {
+        println!("{} is plural", str)
+    } else {
+        println!("{} is singular", str)
+    }
 }
