@@ -83,17 +83,18 @@ For your convenience, here is a list of all the exercises, with links to view th
 
 - [Exercise A - Variables & Scope](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/a_variables)
 - [Exercise B - Functions](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/b_functions)
-- [Exercise C - Simple Types](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/c_simple_types)
-- [Exercise D - Control Flow & Strings](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/d_control_flow_strings)
-- [Exercise E - Ownership & References](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/e_ownership_references)
-- [Exercise F - Structs & Traits](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/f_structs_traits)
-- [Exercise G - Collections & Enums](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/g_collections_enums)
-- [Exercise H - Closures & Threads](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/h_closures_threads)
-- [Exercise Z - Final Project](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/z_final_project)
+- [Exercise C - Modules](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/c_modules)
+- [Exercise D - Simple Types](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/d_simple_types)
+- [Exercise E - Control Flow](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/e_control_flow)
+- [Exercise F - Strings](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/f_strings)
+- [Exercise G - Ownership & References](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/g_ownership_references)
+- [Exercise ? - Structs & Traits](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/)
+- [Exercise ? - Collections & Enums](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/)
+- [Exercise Z - Image Manipulation](https://github.com/CleanCut/ultimate_rust_crash_course/tree/master/exercise/z_final_project)
 
 # Projects
 
-- [Invaders](https://github.com/CleanCut/invaders) - A terminal-based Space Invaders arcade game clone.
+- TBD
 
 
 [exercises]: https://github.com/CleanCut/ultimate_rust_crash_course#exercises
