@@ -37,18 +37,18 @@ cargo 1.54.0 (5ae8d74b3 2021-06-22)
 
 Please do the following (see the [How To Learn Rust](https://github.com/CleanCut/ultimate_rust_crash_course/blob/master/HowToLearnRust.md)
 page for details on all of these)
-- [ ] Choose an IDE (or Editor) and configure it with Rust support and customize it to your liking
+- [x] Choose an IDE (or Editor) and configure it with Rust support and customize it to your liking
   - **VS Code users**: Please use the [`rust-analyzer`] extension. **_If you have the `rust` extension installed, please uninstall it!_**
   - **IntelliJ users**: Please use the [`intellij-rust`] extension.
-- [ ] Choose one place to "find answers" and either introduce yourself (if it's a forum, IRC, etc.) or find the answer
+- [x] Choose one place to "find answers" and either introduce yourself (if it's a forum, IRC, etc.) or find the answer
       to one question you have.
-- [ ] Try doing something in Rust!  If you don't have a better idea, then just do this:
+- [x] Try doing something in Rust!  If you don't have a better idea, then just do this:
   - `cargo new message`
   - `cd message`
   - `cargo run`
   - Edit `src/main.rs` and change the message.
   - `cargo run` again to see your new message.
-- [ ] Check out the descriptions of the tools and books.
+- [x] Check out the descriptions of the tools and books.
 
 # Training!
 
