@@ -1,83 +1,65 @@
-// Silence some warnings so they don't distract from the exercise.
+// 일부 경고를 무시하도록 설정하여 연습에 방해가 되지 않도록 합니다.
 #![allow(dead_code, unused_variables)]
+
+// use ding_machine::print_difference;
+// use crate::print_difference;
+
+// use my_lib::{ding, on_off, print_array, print_difference};
+use ding_machine::{ding, on_off, print_array, print_difference};
 
 fn main() {
     let coords: (f32, f32) = (6.3, 15.0);
-    // 1. Pass parts of `coords` to the `print_difference` function. This should show the difference
-    // between the two numbers in coords when you do `cargo run`.  Use tuple indexing.
-    //
-    // The `print_difference` function is defined below the `main` function. It may help if you look
-    // at how it is defined.
-    //
-    //print_difference( ... );   // Uncomment and finish this line
 
+  // 1. `coords`의 일부분을 `print_difference` 함수에 전달합니다. 
+  // 이 함수는 `cargo run`을 실행할 때 coords에 있는 두 수의 차이를 보여줘야 합니다. 튜플 인덱싱을 사용하세요.
+  //
+  // `print_difference` 함수는 `main` 함수 아래에 정의되어 있습니다. 함수가 어떻게 정의되어 있는지 살펴보면 도움이 될 수 있습니다.
+  //
+  // print_difference( ... );  // 주석 해제하고 이 줄을 완성하세요
+    print_difference(coords.0, coords.1); // 주석 해제하고 이 줄을 완성하세요
 
-    // 2. We want to use the `print_array` function to print coords...but coords isn't an array!
-    // Create an array of type [f32; 2] and initialize it to contain the
-    // information from coords.  Uncomment the print_array line and run the code.
-    //
-    //let coords_arr...               // create an array literal out of parts of `coord` here
-    //print_array(coords_arr);        // and pass it in here (this line doesn't need to change)
-
+  // 2. `print_array` 함수를 사용하여 coords를 출력하고 싶지만 coords는 배열이 아닙니다!
+  // [f32; 2] 타입의 배열을 만들고 coords의 정보를 포함하도록 초기화하십시오. `print_array` 라인의 주석을 해제하고 코드를 실행하십시오.
+  //
+  // let coords_arr...        // 여기에 `coord`의 일부분으로부터 배열 리터럴을 만드세요
+  // print_array(coords_arr);    // 여기에 넘겨주세요 (이 줄은 변경할 필요 없음)
+    let coords_arr: [f32; 2] = [coords.0, coords.1];
+    print_array(coords_arr);
 
     let series = [1, 1, 2, 3, 5, 8, 13];
-    // 3. Make the `ding` function happy by passing it the value 13 out of the `series` array.
-    // Use array indexing.  Done correctly, `cargo run` will produce the additional output
-    // "Ding, you found 13!"
-    //
-    //ding(...);
 
+  // 3. `ding` 함수를 만족스럽게 하려면 `series` 배열에서 값 13을 넘겨주세요.
+  // 배열 인덱싱을 사용하세요. 올바르게 수행되면 `cargo run`은 "Ding, you found 13!"라는 추가 출력을 생성합니다.
+  //
+  // ding(...);
+    let a = &series[series.len()-1..];
+    ding(a[0]);
+    let b = series[series.len()-1];
+    ding(b);
+    match series.last() {
+        Some(last_number) => ding(*last_number),
+        None => print!("Error!")
+    }
 
     let mess = ([3, 2], 3.14, [(false, -3), (true, -100)], 5, "candy");
-    // 4. Pass the `on_off` function the value `true` from the variable `mess`.  Done correctly,
-    // `cargo run` will produce the additional output "Lights are on!" I'll get you started:
-    //
-    //on_off(mess.2 ...);
 
-    // 5.  What a mess -- functions in a binary! Let's get organized!
-    //
-    // - Make a library file (src/lib.rs)
-    // - Move all the functions (except main) into the library
-    // - Make all the functions public with `pub`
-    // - Bring all the functions into scope using use statements. Remember, the name of the library
-    //   is defined in Cargo.toml.  You'll need to know that to `use` it.
-    //
-    // `cargo run` should produce the same output, only now the code is more organized. 🎉
+  // 4. `on_off` 함수에 변수 `mess`에서 값 `true`를 전달하세요. 올바르게 수행되면 
+  // `cargo run`은 "Lights are on!"이라는 추가 출력을 생성합니다. 시작해 드리겠습니다:
+  //
+  // on_off(mess.2 ...);
+    on_off(mess.2[1].0);
 
-    // Challenge: Uncomment the line below, run the code, and examine the
-    // output. Then go refactor the print_distance() function according to the
-    // instructions in the comments inside that function.
+  // 5.  너무 복잡한 코드 - 함수들이 섞여있네요! 코드를 정리.
+  //
+  // - 라이브러리 파일(src/lib.rs) 만들기
+  // - 모든 함수(main 제외)를 라이브러리로 이동
+  // - 모든 함수를 `pub` 키워드를 사용하여 공개 함수로 만들기
+  // - `use` 문을 사용하여 모든 함수를 스코프로 가져오기. 라이브러리의 이름은 Cargo.toml에 정의되어 있습니다. `use`하기 위해서는 이 이름을 알아야 합니다.
+  //
+  // `cargo run`은 동일한 출력을 생성해야 하며, 이제 코드는 더욱 조직적입니다. 
 
-    // print_distance(coords);
+  // 챌린지: 아래 줄의 주석을 해제하고 코드를 실행한 다음 출력을 살펴보세요. 
+  // 그런 다음 해당 함수 내의 주석 지침에 따라 print_distance() 함수를 리팩터링하세요.
+
+  // print_distance(coords);
 }
-
-fn print_difference(x: f32, y: f32) {
-    println!("Difference between {} and {} is {}", x, y, (x - y).abs());
-}
-
-fn print_array(a: [f32; 2]) {
-    println!("The coordinates are ({}, {})", a[0], a[1]);
-}
-
-fn ding(x: i32) {
-    if x == 13 {
-        println!("Ding, you found 13!");
-    }
-}
-
-fn on_off(val: bool) {
-    if val {
-        println!("Lights are on!");
-    }
-}
-
-fn print_distance(z: (f32, f32)) {
-    // Using z.0 and z.1 is not nearly as nice as using x and y.  Lucky for
-    // us, Rust supports destructuring function arguments.  Try replacing "z" in
-    // the parameter list above with "(x, y)" and then adjust the function
-    // body to use x and y.
-    println!(
-        "Distance to the origin is {}",
-        ( z.0.powf(2.0) + z.1.powf(2.0) ).sqrt());
-}
-
