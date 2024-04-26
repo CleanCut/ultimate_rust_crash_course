@@ -1,40 +1,40 @@
-# Exercise A: Variables
+# 연습 A: 변수
 
-### Part 1
-- [ ] Make a new project named `variables` using cargo
-  - See "cargo help" if you forgot the command.
-- [ ] Open `Cargo.toml`
-  - [ ] Change the version number to `2.3.4` and save the file.  Keep an eye out for that version number in cargo's output when you run it!
-- [ ] In `src/main.rs` at the start of the `main()` function:
-  - [ ] Declare the variable `missiles` and initialize it to `8`
-  - [ ] Declare the variable `ready` and initialize it to `2`
-- [ ] Change the `println!(...)` at the end of `main()` to:
-  - `println!("Firing {} of my {} missiles...", ready, missiles);`
-- [ ] Run your program using cargo (see "cargo help" if you forgot the command).
-  Some common errors you may hit:
-  - Forgot to use `let` to bind a variable
-  - Forgot a semicolon `;` at the end of a line
+### 파트 1
+- [ ] cargo를 사용하여 `variables`라는 새 프로젝트를 만드세요.
+  - 명령어를 잊었다면 "cargo help"를 참조하세요.
+- [ ] `Cargo.toml` 파일을 열어보세요.
+  - [ ] 버전 번호를 `2.3.4`로 변경하고 파일을 저장하세요. cargo를 실행할 때 출력에서 그 버전 번호를 주의 깊게 살펴보세요!
+- [ ] `src/main.rs`에서 `main()` 함수의 시작 부분에:
+  - [ ] 변수 `missiles`를 선언하고 `8`로 초기화하세요.
+  - [ ] 변수 `ready`를 선언하고 `2`로 초기화하세요.
+- [ ] `main()` 함수 끝에 있는 `println!(...)`을 다음과 같이 변경하세요:
+  - `println!("내 {} 개의 {} 미사일을 발사 중...", ready, missiles);`
+- [ ] cargo를 사용하여 프로그램을 실행하세요 (명령어를 잊었다면 "cargo help"를 참조하세요).
+  일반적으로 발생할 수 있는 몇 가지 오류:
+  - 변수를 바인딩할 때 `let`을 사용하는 것을 잊음
+  - 줄 끝에 세미콜론 `;`을 잊음
 
-### Part 2
+### 파트 2
 
-- [ ] After the `println!(...)`, subtract `ready` from `missiles` like this:
+- [ ] `println!(...)` 이후에 `ready`를 `missiles`에서 뺀 값을 계산하세요:
   - `missiles = missiles - ready;`
-- [ ] Add a second `println!(...)` to the end:
-  - `println!("{} missiles left", missiles);`
-- [ ] Run your program again using cargo
-  - Did you run into an error about mutability? Go back and add `mut` at the right spot on the line where you declare `missiles`.
-- [ ] Declare a constant named `STARTING_MISSILES` and set it to `8` (the type is `i32`).
-- [ ] Declare a constant named `READY_AMOUNT` and set it to `2` (also `i32`).
-- [ ] Use the constants to initialize `missiles` and `ready`
-  - Where did you put the constants?  If you put them inside the `main()` function, try moving them up above `main()` to module scope! 
-- [ ] Nice. Congratulate yourself on a job well done!  You are a Rust programmer now!
+- [ ] 마지막에 두 번째 `println!(...)`을 추가하세요:
+  - `println!("{} 개의 미사일이 남았습니다", missiles);`
+- [ ] cargo를 사용하여 프로그램을 다시 실행하세요.
+  - 가변성(mutability)에 관한 오류가 발생했나요? `missiles`를 선언하는 줄에 올바른 위치에 `mut`을 추가하세요.
+- [ ] `STARTING_MISSILES`라는 상수를 선언하고 `8`로 설정하세요 (타입은 `i32`입니다).
+- [ ] `READY_AMOUNT`라는 상수를 선언하고 `2`로 설정하세요 (`i32`도 마찬가지입니다).
+- [ ] 상수를 사용하여 `missiles`와 `ready`를 초기화하세요.
+  - 상수를 어디에 위치시켰나요? `main()` 함수 내에 넣었다면, 모듈 스코프 위로 이동해보세요!
+- [ ] 멋져요. 잘 하셨습니다! 자신을 칭찬해주세요. 이제 Rust 프로그래머가 되었습니다!
 
-### Extra challenges:
-- [ ] Explicitly annotate the variables with the type `i32`
-- [ ] Try binding the variables all at once on one line using a pattern (parentheses and commas) -- can you figure out where `mut` goes?
-  - [ ] Can you figure out the correct type annotation when you assign them all in one line?  Hint: it will use the same sort of pattern as the variables and values.
-- [ ] Instead of changing missiles, use the value `missiles - ready` directly in the second `println!(...)`
-  - What warning does cargo emit when you run your program now? Can you fix it?
-- [ ] Add another variable to your program *but don't use it*.
-  - What does cargo say when you run your program?
-- [ ] Try modifying a constant in `main()` (for example, `READY_AMOUNT = 1`). What does the error look like?
+### 추가 도전 과제:
+- [ ] 변수들을 명시적으로 `i32` 타입으로 주석하세요.
+- [ ] 패턴(괄호와 쉼표)을 사용하여 한 줄에 변수를 모두 바인딩해보세요. `mut`은 어디에 위치해야 할지 알 수 있나요?
+  - [ ] 모두 한 줄에 할당할 때 올바른 타입 주석을 찾을 수 있나요? 힌트: 변수와 값의 패턴과 동일한 종류의 패턴을 사용합니다.
+- [ ] 두 번째 `println!(...)`에서 미사일을 변경하는 대신, `missiles - ready`의 값을 직접 사용해보세요.
+  - 프로그램을 실행할 때 cargo가 어떤 경고를 표시하나요? 이를 고칠 수 있나요?
+- [ ] 프로그램에 다른 변수를 추가하지만 *사용하지 않습니다*.
+  - 프로그램을 실행할 때 cargo가 어떤 메시지를 표시하나요?
+- [ ] `main()`에서 상수를 수정해보세요 (예: `READY_AMOUNT = 1`). 어떤 에러가 발생하나요?
