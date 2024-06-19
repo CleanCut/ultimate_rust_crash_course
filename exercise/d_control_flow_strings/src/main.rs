@@ -11,9 +11,18 @@ fn main() {
     //
     //     vec!["apple".to_string(), "banana".to_string()]
     let args: Vec<String> = std::env::args().skip(1).collect();
-
     // This consumes the `args` vector to iterate through each String
     for arg in args {
+
+        if arg == "sum"{
+            sum();
+        }else if arg == "double"{
+            double();
+        }else if arg == "run"{
+            run();
+        }else {
+            count(arg);
+        }
         // 1a. Your task: handle the command-line arguments!
         //
         // - If arg is "sum", then call the sum() function
@@ -26,6 +35,10 @@ fn main() {
     }
 }
 
+fn run(){
+    println!("run"); // This will output just a newline at the end for cleanliness.
+
+}
 fn sum() {
     let mut sum = 0;
     // 2. Use a "for loop" to iterate through integers from 7 to 23 *inclusive* using a range
@@ -53,6 +66,14 @@ fn count(arg: String) {
     //
     // print!("{} ", arg); // Execute this line 8 times, and then break. `print!` doesn't add a newline.
 
+    let mut i = 0;
+   loop{
+        print!("{}{},", arg,i);
+        i= i+1;
+        if i==8{
+            break;
+        }
+    }
 
-    println!(); // This will output just a newline at the end for cleanliness.
+    println!("line"); // This will output just a newline at the end for cleanliness.
 }
