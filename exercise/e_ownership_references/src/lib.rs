@@ -19,14 +19,20 @@ pub fn change(s: &mut String) -> &mut String{
     }
 }
 
+//corect way 
+pub fn change_correct(s: &mut String){
+    if !s.ends_with("s"){
+        s.push_str("s");
+    }
+}
 
 pub fn eat(s: String)-> bool{
     let consumes = s;
 
     if consumes.contains("a") && consumes.starts_with("b"){
-        return true;
+         true
     }else{
-        return false;
+         false
     }
 }
 
