@@ -1,0 +1,6 @@
+[package]
+name = "variables"
+version = "2.3.4"
+edition = "2021"
+
+[dependencies]
