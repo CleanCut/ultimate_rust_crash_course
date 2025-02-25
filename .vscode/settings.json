@@ -1,0 +1,13 @@
+{
+  "rust-analyzer.linkedProjects": [
+    "examples/hello/Cargo.toml",
+    "exercise/b_functions/Cargo.toml",
+    "exercise/c_simple_types/Cargo.toml",
+    "exercise/d_control_flow_strings/Cargo.toml",
+    "exercise/e_ownership_references/Cargo.toml",
+    "exercise/f_structs_traits/Cargo.toml",
+    "exercise/g_collections_enums/Cargo.toml",
+    "exercise/h_closures_threads/Cargo.toml",
+    "exercise/z_final_project/Cargo.toml",
+  ]
+}
