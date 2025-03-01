@@ -5,12 +5,12 @@
   - See "cargo help" if you forgot the command.
 - [x] Open `Cargo.toml`
   - [x] Change the version number to `2.3.4` and save the file.  Keep an eye out for that version number in cargo's output when you run it!
-- [ ] In `src/main.rs` at the start of the `main()` function:
-  - [ ] Declare the variable `missiles` and initialize it to `8`
-  - [ ] Declare the variable `ready` and initialize it to `2`
-- [ ] Change the `println!(...)` at the end of `main()` to:
+- [x] In `src/main.rs` at the start of the `main()` function:
+  - [x] Declare the variable `missiles` and initialize it to `8`
+  - [x] Declare the variable `ready` and initialize it to `2`
+- [x] Change the `println!(...)` at the end of `main()` to:
   - `println!("Firing {} of my {} missiles...", ready, missiles);`
-- [ ] Run your program using cargo (see "cargo help" if you forgot the command).
+- [x] Run your program using cargo (see "cargo help" if you forgot the command).
   Some common errors you may hit:
   - Forgot to use `let` to bind a variable
   - Forgot a semicolon `;` at the end of a line

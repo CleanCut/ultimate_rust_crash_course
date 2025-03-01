@@ -1,3 +1,4 @@
 fn main() {
-    println!("Hello, world!");
+    let (missiles,ready) = (8, 2);
+    println!("Firing {} of {} missiles...", ready, missiles);
 }
