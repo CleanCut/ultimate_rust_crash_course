@@ -20,7 +20,6 @@ fn main() {
         // - If arg is "double", then call the double() function
         // - If arg is anything else, then call the count() function, passing "arg" to it.
 
-
         // 1b. Now try passing "sum", "double" and "bananas" to the program by adding your argument
         // after "cargo run".  For example "cargo run sum"
     }
@@ -32,7 +31,6 @@ fn sum() {
     // and add them all together (increment the `sum` variable).  Hint: You should get 255
     // Run it with `cargo run sum`
 
-
     println!("The sum is {}", sum);
 }
 
@@ -43,8 +41,10 @@ fn double() {
     // by 2) until `x` is larger than 500.  Increment `count` each time through the loop. Run it
     // with `cargo run double`  Hint: The answer is 9 times.
 
-
-    println!("You can double x {} times until x is larger than 500", count);
+    println!(
+        "You can double x {} times until x is larger than 500",
+        count
+    );
 }
 
 fn count(arg: String) {
@@ -52,7 +52,6 @@ fn count(arg: String) {
     // You will need to count your loops, somehow.  Run it with `cargo run bananas`
     //
     // print!("{} ", arg); // Execute this line 8 times, and then break. `print!` doesn't add a newline.
-
 
     println!(); // This will output just a newline at the end for cleanliness.
 }
