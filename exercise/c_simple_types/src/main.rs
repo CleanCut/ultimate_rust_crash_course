@@ -11,7 +11,6 @@ fn main() {
     //
     //print_difference( ... );   // Uncomment and finish this line
 
-
     // 2. We want to use the `print_array` function to print coords...but coords isn't an array!
     // Create an array of type [f32; 2] and initialize it to contain the
     // information from coords.  Uncomment the print_array line and run the code.
@@ -19,14 +18,12 @@ fn main() {
     //let coords_arr...               // create an array literal out of parts of `coord` here
     //print_array(coords_arr);        // and pass it in here (this line doesn't need to change)
 
-
     let series = [1, 1, 2, 3, 5, 8, 13];
     // 3. Make the `ding` function happy by passing it the value 13 out of the `series` array.
     // Use array indexing.  Done correctly, `cargo run` will produce the additional output
     // "Ding, you found 13!"
     //
     //ding(...);
-
 
     let mess = ([3, 2], 3.14, [(false, -3), (true, -100)], 5, "candy");
     // 4. Pass the `on_off` function the value `true` from the variable `mess`.  Done correctly,
@@ -78,6 +75,6 @@ fn print_distance(z: (f32, f32)) {
     // body to use x and y.
     println!(
         "Distance to the origin is {}",
-        ( z.0.powf(2.0) + z.1.powf(2.0) ).sqrt());
+        (z.0.powf(2.0) + z.1.powf(2.0)).sqrt()
+    );
 }
-
