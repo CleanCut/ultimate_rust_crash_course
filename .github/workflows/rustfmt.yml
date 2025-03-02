@@ -16,4 +16,4 @@ jobs:
         with:
           components: rustfmt
       - name: Rustfmt Check
-        uses: actions-rust-lang/rustfmt@v1
+        run: find . -type f -name "*.rs" | xargs rustfmt --check
