@@ -7,7 +7,7 @@ on:
 jobs:
   # Check formatting with rustfmt
   formatting:
-    name: cargo fmt
+    name: rustfmt all repo
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
