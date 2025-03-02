@@ -28,9 +28,11 @@ fn sum() {
 fn double() {
     let mut count = 0;
     let mut x = 1;
-    // 3. Use a "while loop" to count how many times you can double the value of `x` (multiply `x`
-    // by 2) until `x` is larger than 500.  Increment `count` each time through the loop. Run it
-    // with `cargo run double`  Hint: The answer is 9 times.
+
+    while x < 500 {
+        count += 1;
+        x *= 2;
+    }
 
     println!(
         "You can double x {} times until x is larger than 500",
@@ -39,10 +41,15 @@ fn double() {
 }
 
 fn count(arg: String) {
-    // Challenge: Use an unconditional loop (`loop`) to print `arg` 8 times, and then break.
-    // You will need to count your loops, somehow.  Run it with `cargo run bananas`
-    //
-    // print!("{} ", arg); // Execute this line 8 times, and then break. `print!` doesn't add a newline.
+    let mut i: i32 = 0;
 
-    println!(); // This will output just a newline at the end for cleanliness.
+    loop {
+        i += 1;
+        print!("{}", arg);
+        if i > 7 {
+            break;
+        }
+    }
+
+    println!();
 }
